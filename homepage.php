@@ -3,13 +3,15 @@
 
 get_header(); ?>
 
+<?php while ( have_posts() ) : the_post(); ?>
+
     <div class="main-carousel">
-        <div class="carousel-cell">
+        <div class="carousel-cell" style="background-image: url('<?php the_field('slide_1_background'); ?>')">
             
             <div class="wrectangle">
-                <h3 class="title">My Story</h3>
-                <p class="call-out">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Find out more</a>
+                <h3 class="title"><?php the_field('slide_1_title'); ?></h3>
+                <p class="call-out"><?php the_field('slide_1_body'); ?></p>
+                <a class="link" href="<?php the_field('slide_1_destination'); ?>"><?php the_field('slide_1_link_text'); ?></a>
             </div>
 
         </div>
@@ -18,7 +20,7 @@ get_header(); ?>
             <div class="wrectangle">
                 <h3 class="title">Donations</h3>
                 <p class="call-out">Suspendisse sit amet nisi est. Sed consequat, velit grolla.</p>
-                <a href="#">How you can help</a>
+                <a class="link" href="#">How you can help</a>
             </div>
 
         </div>
@@ -27,11 +29,23 @@ get_header(); ?>
             <div class="wrectangle">
                 <h3 class="title">The Blog</h3>
                 <p class="call-out">Join in discussions, vel gravida urna placerat ac.</p>
-                <a href="#">Join the discussions</a>
+                <a class="link" href="#">Join the discussions</a>
             </div>
 
         </div>
     </div>
+
+
+<?php endwhile; // end of the loop. ?>
+
+
+    <?php
+    /*
+    wp_nav_menu( array( 
+        'theme_location' => 'homepage-carousel', 
+        'container_class' => 'custom-menu-class' ) ); 
+        */
+    ?>
         
 	<div class="masonryinside">
 		<div class="wrapper">

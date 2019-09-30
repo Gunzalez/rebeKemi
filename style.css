@@ -15,16 +15,18 @@ Version: 0.1.0
 
 .carousel-cell {
     width: 100%; /* full width */
-    height: 500px; /* height of carousel */
-    background: red;
+    height: 530px; /* height of carousel */
+    /* background: red; */
+    background-size: cover;
+    background-position: center center;
 }
 
 .wrectangle {
     background: #fff;
-    padding: 2em 3.5em;
+    padding: 2em;
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 70%;
     max-width: 340px;
     position: absolute;
     top: 50%;
@@ -35,7 +37,7 @@ Version: 0.1.0
     transform: translate( 0, -50%);
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    min-height: 300px;
+    min-height: 260px;
 }
 
 @media screen and (min-width: 768px){
@@ -51,14 +53,24 @@ Version: 0.1.0
 }
 
 .wrectangle .title {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    font-size: 0.9em;
 }
 
 .wrectangle .call-out {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #000000;
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.wrectangle .link {
+    padding: 10px;
+    border-top: 2px solid pink;
+    display: inline-block;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #000000;
 }
 
 .main-carousel {
@@ -72,5 +84,5 @@ Version: 0.1.0
 }
 
 .flickity-page-dots {
-    bottom: 25px !important;
+    /* bottom: 25px !important; */
 }
