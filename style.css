@@ -61,6 +61,16 @@ Version: 0.1.0
     padding-bottom: 15px;
 }
 
+.main-carousel {
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.10);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.10);
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.10);
+}
+
 .main-carousel button {
     background: transparent !important;
+}
+
+.flickity-page-dots {
+    bottom: 25px !important;
 }

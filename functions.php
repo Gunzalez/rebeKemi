@@ -5,15 +5,11 @@
  * @package Gazette
  */
 
- /**
- * Custom child template tags for this theme.
- */
-// require get_template_directory() . '../../gazette-child/inc/template-tags.php';
 
 /**
  * Enqueue child theme scripts and styles.
  */
-function gazette_child_scripts() {
+function stacker_child_scripts() {
 
     wp_enqueue_style( 'flickity.min', get_stylesheet_directory_uri() . '/inc/js/flickity.min.css',false,'2.1.2','all');
 
@@ -22,4 +18,10 @@ function gazette_child_scripts() {
     wp_enqueue_script( 'kemi-scripts', get_stylesheet_directory_uri() . '/inc/js/kemi-scripts.js', array ( 'jquery' ), 0.1, true);
 
 }
-add_action( 'wp_enqueue_scripts', 'gazette_child_scripts' );
+add_action( 'wp_enqueue_scripts', 'stacker_child_scripts' );
+
+/* homepage carousel menu */
+function wpb_custom_new_menu() {
+    register_nav_menu('homepage-carousel',__( 'Homepage Carousel' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
