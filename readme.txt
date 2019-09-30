@@ -1,7 +1,6 @@
-This theme is released by ThemFurnace.com under a GPL license.
-Stacker is a Grid-Based theme for showing off your photos and images.
 
-Download 22 more free themes at http://themefurnace.com/
+
+Bespoke WordPress Theme for the RebeKemi website, based on https://en-gb.wordpress.org/themes/stacker-lite/ theme
 
 Stacker is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
@@ -20,14 +19,3 @@ Social Links Setup:
 
 This theme includes a social links menu, please see here how to add it :
 https://en.support.wordpress.com/menus/social-links-menu/
-
-
-Updates:
-
-1.0.3 
-Removed old theme tags
-Fixed theme text-domain
-
-1.0.4
-Required Fixes for 2 Year Review
-Added Support for Custom Logo
