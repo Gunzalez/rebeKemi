@@ -38,10 +38,45 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
         
 	<div class="masonryinside">
-        <div class="inside-masonryinside">            
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'kemi-content', 'page' ); ?>
-			<?php endwhile; // end of the loop. ?>
-        </div>        
-	</div>
+        <div class="inside-masonryinside">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                        
+                        <div class="the-content">                                
+                            <h2><?php the_title(); ?></h2>
+                            <?php the_content(); ?>
+                        </div>
+
+                        <?php endwhile; // end of the loop. ?>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="#" class="pod">
+                            <h3 class="title">
+                                <span>My Story</span></h3>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="#" class="pod">
+                            <h3 class="title">
+                                <span>The Blog</span></h3>
+                        </a>                       
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <a href="#" class="pod">                            
+                            <h3 class="title">
+                                <span>Donations</span></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </div>
+    
+
+
 <?php get_footer(); ?>
