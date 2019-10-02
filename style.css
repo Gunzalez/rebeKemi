@@ -6,7 +6,10 @@ Author URI: http://www.gunzalez.com
 Template: stacker-lite
 Version: 0.1.0
 */
+/* 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> */
 
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 @import url("../stacker-lite/style.css");
 
@@ -17,7 +20,6 @@ Version: 0.1.0
 .carousel-cell {
     width: 100%; /* full width */
     height: 530px; /* height of carousel */
-    /* background: red; */
     background-size: cover;
     background-position: center center;
 }
@@ -39,6 +41,9 @@ Version: 0.1.0
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     min-height: 260px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
 }
 
 @media screen and (min-width: 768px){
@@ -86,4 +91,20 @@ Version: 0.1.0
 
 .flickity-page-dots {
     /* bottom: 25px !important; */
+}
+
+.inside-masonryinside {
+    padding: 45px 0;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.inside-masonryinside h2 {
+    font-size: 2.5em;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.inside-masonryinside p {
+    font-size: 1.3em;
 }

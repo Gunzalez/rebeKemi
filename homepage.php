@@ -1,6 +1,5 @@
 <?php 
 /* Template Name: Custom Homepage */
-
 get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -37,35 +36,12 @@ get_header(); ?>
 
 
 <?php endwhile; // end of the loop. ?>
-
-
-    <?php
-    /*
-    wp_nav_menu( array( 
-        'theme_location' => 'homepage-carousel', 
-        'container_class' => 'custom-menu-class' ) ); 
-        */
-    ?>
         
 	<div class="masonryinside">
-		<div class="wrapper">
+        <div class="inside-masonryinside">            
 			<?php while ( have_posts() ) : the_post(); ?>
-
-
-			
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-
-				<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || '0' != get_comments_number() ) :
-					comments_template();
-				endif;
-				?>
-
+				<?php get_template_part( 'kemi-content', 'page' ); ?>
 			<?php endwhile; // end of the loop. ?>
-		</div>
-        <?php /* stacker_post_nav(); */ ?>
+        </div>        
 	</div>
 <?php get_footer(); ?>
