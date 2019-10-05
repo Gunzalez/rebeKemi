@@ -45,7 +45,7 @@ get_header(); ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                         
                         <div class="the-content">                                
-                            <h2><?php the_title(); ?></h2>
+                            <h2 class="title"><?php the_title(); ?></h2>
                             <?php the_content(); ?>
                         </div>
 
@@ -76,6 +76,8 @@ get_header(); ?>
             </div>
         </div>         
     </div>
+
+    
     
 
 
