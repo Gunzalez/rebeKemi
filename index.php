@@ -27,16 +27,6 @@ if ( have_posts() ) : ?>
 
 			<div class="masonry">
 
-			<?php
-				if ( is_home() ) {
-					// Include the featured content template.
-					// get_template_part( 'featured-content' );
-					?>
-					<h2>Does it work!!!!</h2>
-					<?
-				}
-			?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php
