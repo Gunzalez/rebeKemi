@@ -12,4 +12,13 @@ jQuery(document).ready(function ($) {
     // social links open in new tab/window
     $('#menu-social a').attr('target', '_blank');
 
+    // funky grid stuff    
+    $('.grid').pinterest_grid({
+        no_columns: 3,
+        padding_x: 30,
+        padding_y: 30,
+        margin_bottom: 15,
+        single_column_breakpoint: 700
+    });
+
 });

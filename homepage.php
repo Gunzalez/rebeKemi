@@ -42,6 +42,7 @@ get_header(); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
+
                         <?php while ( have_posts() ) : the_post(); ?>
                         
                         <div class="the-content">                                
@@ -55,7 +56,7 @@ get_header(); ?>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="#" class="pod">
+                        <a href="http://localhost/wordpress/my-story/" class="pod">
                             <h3 class="title">
                                 <span>My Story</span></h3>
                         </a>

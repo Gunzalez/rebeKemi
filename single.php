@@ -11,6 +11,8 @@ get_header(); ?>
 		<div class="wrapper">
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			SINGLE
+
 				<?php get_template_part( 'content', 'single' ); ?>
 
 
