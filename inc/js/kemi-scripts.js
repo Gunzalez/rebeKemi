@@ -15,10 +15,10 @@ jQuery(document).ready(function ($) {
     // funky grid stuff    
     $('.grid').pinterest_grid({
         no_columns: 3,
-        padding_x: 30,
-        padding_y: 30,
+        padding_x: 0,
+        padding_y: 0,
         margin_bottom: 15,
-        single_column_breakpoint: 700
+        single_column_breakpoint: 920
     });
 
 });

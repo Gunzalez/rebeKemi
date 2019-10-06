@@ -3,24 +3,33 @@
 
 get_header(); ?>
 
+<?php
+$theTitle = '';
+$theContent = '';
+?>
+
+<?php while ( have_posts() ) : the_post(); ?>
+
+	<div class="carousel-cell" style="background-image: url('<?php the_field('background_image'); ?>')">            
+		
+		<div class="wrectangle">
+			<h3 class="title"><?php the_title(); ?></h3>
+			<p class="call-out"><?php the_content(); ?></p>
+		</div>
+
+	</div>
+		<?php
+
+		$theTitle = '';
+		$theContent = '';
+
+	?>
+
+<?php endwhile; // end of the loop. ?>
+
+
 	<div class="masonryinside">
-		<div class="inside-masonryinside">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							
-							<?php while ( have_posts() ) : the_post(); ?>
-							
-							<div class="the-content">                                
-								<h2 class="title"><?php the_title(); ?></h2>
-								<?php the_content(); ?>
-							</div>
-
-							<?php endwhile; // end of the loop. ?>
-
-						</div>
-					</div>
-				</div>
+		<div class="inside-masonryinside">				
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -57,8 +66,6 @@ get_header(); ?>
 
 								<?php endif; wp_reset_postdata(); ?>
 							</section>
-
-
 
 						</div>
 					</div>

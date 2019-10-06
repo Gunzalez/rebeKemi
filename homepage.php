@@ -41,7 +41,7 @@ get_header(); ?>
         <div class="inside-masonryinside">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 col-md-8 offset-md-2">
 
                         <?php while ( have_posts() ) : the_post(); ?>
                         

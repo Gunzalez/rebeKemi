@@ -18,12 +18,22 @@ Version: 0.1.0
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 /* usage: font-family: 'Raleway', sans-serif; */
 
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.header-background,
 .carousel-cell {
     width: 100%; /* full width */
     height: 530px; /* height of carousel */
     background-size: cover;
     background-position: center center;
 }
+
+/* .header-background {
+    height: 200px;
+} */
 
 .wrectangle {
     background: #fff;
@@ -108,9 +118,8 @@ Version: 0.1.0
 
 .the-content {
     font-size: 1.3em;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
-
 
 .the-content .title {
     padding-bottom: 20px;
@@ -120,15 +129,17 @@ Version: 0.1.0
 
 .pod {
     width: 100%;
-    height: 320px;
+    height: 240px;
     background-color: red;
     position: relative;
     display: block;
+    border-radius: 2px;
+    margin-bottom: 30px;
 }
 
 .pod .title {
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 0;
     right: 0;
     text-align: center;    
@@ -136,11 +147,13 @@ Version: 0.1.0
 
 .pod .title span {
     display: inline-block;
-    background: #ffffff;
-    padding: 15px 20px;
-    font-size: 1.2em;
+    background: pink;
+    color: #000000;
+    padding: 10px 13px;
+    font-size: 1.0em;
     text-transform: uppercase;
     transition: all 500ms;
+    border-radius: 2px;
 }
 
 .pod:hover .title span {
@@ -148,11 +161,11 @@ Version: 0.1.0
     color: #ffffff;
 }
 
-
 .grid {
     position: relative;
     max-width: 100%;
     width: 100%;
+    margin-top: 15px;
 }
 
 .mini-pod {
@@ -171,7 +184,7 @@ Version: 0.1.0
     min-height: 60px;
     background: white;
     /* box-shadow: 0px 1px 2px rgba(0,0,0,0.3); */
-    margin-bottom: 15px;
+    margin: 0 10px 30px 10px;
     border-radius: 1px;
 }
 
