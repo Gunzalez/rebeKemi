@@ -56,7 +56,7 @@ get_header(); ?>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="http://localhost/wordpress/my-story/" class="pod">
+                        <a href="http://www.rebekemi.com/my-story/" class="pod">
                             <h3 class="title">
                                 <span>My Story</span></h3>
                         </a>
