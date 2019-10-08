@@ -10,20 +10,14 @@ $theContent = '';
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="carousel-cell" style="background-image: url('<?php the_field('background_image'); ?>')">            
+	<div class="page-header" style="background-image: url('<?php the_field('background_image'); ?>')">            
 		
-		<div class="wrectangle">
+		<div class="wrectangle box-shadow">
 			<h3 class="title"><?php the_title(); ?></h3>
-			<p class="call-out"><?php the_content(); ?></p>
+			<div class="call-out"><?php the_content(); ?></div>
 		</div>
 
 	</div>
-		<?php
-
-		$theTitle = '';
-		$theContent = '';
-
-	?>
 
 <?php endwhile; // end of the loop. ?>
 
@@ -60,7 +54,6 @@ $theContent = '';
 											<span><?php the_title(); ?></span></h3>
 										</div>
 									</a>
-
 
 									<?php endwhile; ?>
 

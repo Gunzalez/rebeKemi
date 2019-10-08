@@ -23,17 +23,16 @@ p {
     margin: 0 0 15px 0;
 }
 
-.header-background,
+.page-header,
 .carousel-cell {
     width: 100%; /* full width */
     height: 530px; /* height of carousel */
     background-size: cover;
     background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-/* .header-background {
-    height: 200px;
-} */
 
 .wrectangle {
     background: #fff;
@@ -42,19 +41,9 @@ p {
     margin: auto;
     width: 70%;
     max-width: 340px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    -ms-transform: translate( 0, -50%);
-    -webkit-transform: translate( 0, -50%);
-    transform: translate( 0, -50%);
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     min-height: 260px;
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.19);
 }
 
 .box-shadow {
@@ -71,20 +60,16 @@ p {
     }
 }
 
-.wrectangle * {
-    text-transform: uppercase;
-}
-
 .wrectangle .title {
     padding-bottom: 15px;
     font-size: 0.9em;
+    text-transform: uppercase;
 }
 
 .wrectangle .call-out {
-    font-size: 1.3em;
+    font-size: 1.0em;
     color: #000000;
     margin: 0;
-    padding-bottom: 20px;
 }
 
 .wrectangle .link {
@@ -94,6 +79,15 @@ p {
     font-size: 1.0em;
     font-weight: bold;
     color: #000000;
+}
+
+
+.page-header {
+    height: 300px;
+}
+
+.page-header .wrectangle {
+    min-height: 160px;
 }
 
 .main-carousel {
@@ -217,4 +211,50 @@ p {
 .mini-pod:hover .title span {
     background: #000000;
     color: #ffffff;
+}
+
+/* theme overrides */
+
+#cssmenu {
+    background: pink;
+}
+#cssmenu ul a {
+    color: #000000 !important;
+}
+
+#cssmenu ul ul a {
+    color: #a2a2a2 !important;
+}
+
+#cssmenu ul ul a:hover {
+    color: #ffffff !important;
+}
+
+#cssmenu > ul > li.menu-item-has-children > a:after, 
+#cssmenu .menu > ul > li.page_item_has_children > a:after {
+    /* position: absolute;
+    top: 22px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block; */
+    background: #000000;
+    /* content: ''; */
+}
+
+#cssmenu > ul > li.menu-item-has-children > a:before,
+#cssmenu .menu > ul > li.page_item_has_children > a:before {
+    /* position: absolute;
+    top: 19px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px; */
+    background: #000000;
+    /* content: '';
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease; */
 }

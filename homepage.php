@@ -7,27 +7,27 @@ get_header(); ?>
     <div class="main-carousel">
         <div class="carousel-cell" style="background-image: url('<?php the_field('slide_1_background'); ?>')">
             
-            <div class="wrectangle">
+            <div class="wrectangle box-shadow">
                 <h3 class="title"><?php the_field('slide-1-title'); ?></h3>
-                <p class="call-out"><?php the_field('slide_1_paragraph'); ?></p>
+                <div class="call-out"><?php the_field('slide_1_paragraph'); ?></div>
                 <a class="link" href="<?php the_field('slide_1_destination'); ?>"><?php the_field('slide_1_link_text'); ?></a>
             </div>
 
         </div>
         <div class="carousel-cell" style="background-image: url('<?php the_field('slide_2_background'); ?>')">
             
-            <div class="wrectangle">
+            <div class="wrectangle box-shadow">
                 <h3 class="title"><?php the_field('slide-2-title'); ?></h3>
-                <p class="call-out"><?php the_field('slide_2_paragraph'); ?></p>
+                <div class="call-out"><?php the_field('slide_2_paragraph'); ?></div>
                 <a class="link" href="<?php the_field('slide_2_destination'); ?>"><?php the_field('slide_2_link_text'); ?></a>
             </div>
 
         </div>
         <div class="carousel-cell" style="background-image: url('<?php the_field('slide_3_background'); ?>')">            
             
-            <div class="wrectangle">
+            <div class="wrectangle box-shadow">
                 <h3 class="title"><?php the_field('slide-3-title'); ?></h3>
-                <p class="call-out"><?php the_field('slide_3_paragraph'); ?></p>
+                <div class="call-out"><?php the_field('slide_3_paragraph'); ?></div>
                 <a class="link" href="<?php the_field('slide_3_destination'); ?>"><?php the_field('slide_3_link_text'); ?></a>
             </div>
 
