@@ -1,12 +1,7 @@
 <?php 
-/* Template Name: Custom Landing Template */
+/* Template Name: Custom Landing Page */
 
 get_header(); ?>
-
-<?php
-$theTitle = '';
-$theContent = '';
-?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
