@@ -40,15 +40,18 @@ get_header(); ?>
 
 								if ( $parent->have_posts() ) : ?>
 
+									<?php $count = 1 ?>
+
 									<?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
 
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="mini-pod"> 
 										<div class="intro">
 											<p><?php the_field('introduction'); ?></p>
-											<h3 class="title">
-											<span><?php the_title(); ?></span></h3>
+											<h3 class="title"><span><?php echo $count; ?>.<?php the_title(); ?></span></h3>
 										</div>
 									</a>
+									
+									<?php $count = $count + 1 ?>
 
 									<?php endwhile; ?>
 

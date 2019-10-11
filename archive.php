@@ -7,12 +7,8 @@
 get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
-	<div class="page-header archive" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/pink-bricks.jpg')">          
-		
-		<div class="wrectangle box-shadow">
-			<h3 class="title"><?php echo get_the_archive_title() ?></h3>
-		</div>
-
+	<div class="archive-header">
+		<h3 class="title"><?php echo get_the_archive_title() ?></h3>
 	</div>
 
 	<div class="demo-wrap">
