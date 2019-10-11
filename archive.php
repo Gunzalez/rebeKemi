@@ -7,13 +7,16 @@
 get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
+	<div class="page-header archive" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/pink-bricks.jpg')">          
+		
+		<div class="wrectangle box-shadow">
+			<h3 class="title"><?php echo get_the_archive_title() ?></h3>
+		</div>
+
+	</div>
+
 	<div class="demo-wrap">
-		<div class="wrapper">
-			<h2 class="archive-title">
-				<?php
-				the_archive_title()
-				?>
-			</h2>
+		<div class="wrapper">		
 
 			<div class="masonry" id="scroll-wrapper">
 				<?php /* Start the Loop */ ?>
