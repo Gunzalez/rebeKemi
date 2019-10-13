@@ -9,7 +9,7 @@ get_header(); ?>
 		
 		<div class="wrectangle box-shadow">
 			<h3 class="title"><?php the_title(); ?></h3>
-			<div class="call-out"><?php the_field('page_introduction__text'); ?></div>
+			<div class="call-out"><?php the_field('page_introduction_text'); ?></div>
 		</div>
 
 	</div>

@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+single page include
 
 	<div class="masonryinside">
 		<div class="wrapper">

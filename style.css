@@ -113,6 +113,15 @@ p {
     margin-bottom: 15px;
 }
 
+.page-header.naked {
+    border-top: 1px solid #cccccc;
+    /* height: 180px; */
+}
+
+.page-header.naked .wrectangle {
+    background: transparent;
+}
+
 .archive-header {
     padding: 45px 0 15px 0;
     text-align: center;
@@ -319,4 +328,24 @@ p {
     -ms-transition: all .25s ease;
     -o-transition: all .25s ease;
     transition: all .25s ease; */
+}
+
+/* .masonryinside {
+    margin: 0;
+    padding: 0;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    font-size: .85em;
+    margin-bottom: 0px;
+} */
+
+.masonryinside.no-margin {
+    margin: 0;
+}
+
+.big-wrectangle {
+    width: auto;
+    text-align: left;
+    min-height: inherit;
 }
