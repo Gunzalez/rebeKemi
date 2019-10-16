@@ -91,11 +91,10 @@ if ( !function_exists( 'custom_page_nav' ) ) :
 		}
 		?>
 
-        <div class="custom-page-links">
-            <?php
-            previous_post_link('%link');
-            next_post_link('%link');
-            ?>
+        <div class="article-footer">
+            <div class="custom-page-links">
+                <?php previous_post_link('%link'); next_post_link('%link'); ?>
+            </div>
         </div>
 	<?php
 	}
