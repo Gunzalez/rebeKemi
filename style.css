@@ -86,6 +86,7 @@ p {
     margin: 0;
 }
 
+.brand-link,
 .wrectangle span {
     border-radius: 2px;
     padding: 6px 12px;
@@ -348,4 +349,23 @@ p {
     width: auto;
     text-align: left;
     min-height: inherit;
+    margin: 30px auto;
+}
+
+.page-links a {
+    border-radius: 2px;
+    padding: 6px 12px;
+    background: pink;
+    display: inline-block;
+    font-size: 0.8em;
+    color: #000000;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background 500ms;
+    text-decoration: none;
+}
+
+.custom-page-links a:hover {
+    color: #ffffff;
+    background: #000000;
 }

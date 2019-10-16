@@ -31,11 +31,10 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-sm-12 col-md-10 offset-md-1">
 
-				<div class="wrectangle big-wrectangle">
-					
+					<div class="wrectangle big-wrectangle">						
 						<?php the_content(); ?>
-						<?php stacker_post_nav(); ?>
-				</div>
+						<?php custom_page_nav(); ?>
+					</div>
 
 
 				</div>

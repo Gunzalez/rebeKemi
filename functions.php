@@ -73,3 +73,30 @@ add_filter('get_the_archive_title', function ($title) {
     }
     return $title;
 });
+
+
+// overrides
+if ( !function_exists( 'custom_page_nav' ) ) :
+	/**
+	 * bespoke page links for rebekemi theme
+	 */
+	function custom_page_nav()
+	{
+		// Don't print empty markup if there's nowhere to navigate.
+		$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
+		$next = get_adjacent_post( false, '', false );
+
+		if ( !$next && !$previous ) {
+			return;
+		}
+		?>
+
+        <div class="custom-page-links">
+            <?php
+            previous_post_link('%link');
+            next_post_link('%link');
+            ?>
+        </div>
+	<?php
+	}
+endif;
