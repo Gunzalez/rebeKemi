@@ -17,7 +17,7 @@ get_header(); ?>
 
 	<div class="demo-wrap">
 		<div class="wrapper">
-		<?php echo do_shortcode('[sp_wpcarousel id="227"]'); ?>
+			
 			<div class="masonry" id="scroll-wrapper">
 
 				<?php /* Start the Loop */ ?>
