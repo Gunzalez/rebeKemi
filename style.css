@@ -80,10 +80,10 @@ p {
     color: #000000;
 }
 
-.wrectangle p {
+.page-header .wrectangle p {
     padding: 0;
     margin: 0;
-    line-height: 130%;
+    line-height: 150%;
 }
 
 .wrectangle .call-out {
