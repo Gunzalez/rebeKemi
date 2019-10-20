@@ -19,6 +19,7 @@ Version: 0.1.0
 /* usage: font-family: 'Raleway', sans-serif; */
 body {
     /* background: #e8e8e8; */
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -357,10 +358,61 @@ p {
 
 .big-wrectangle {
     width: auto;
+    max-width: 100%;
+    text-align: left;
+    min-height: inherit;
+    margin: 30px 0;
+    font-size: 1.2em;
+    color: #444444;
+}
+
+.my-stories {
+    margin: 30px 0;
+}
+
+.my-stories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.my-stories ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.my-stories ul li a {
+    display: inline-block;
+    padding: 15px 25px 7px 0;
+    border-bottom: 2px solid pink;
+    color: #444444;
+    transition: all 250ms;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.my-stories ul li.current_page_item a {
+    border-color: #000000;
+    display: block;
+    cursor: default;
+}
+
+.my-stories ul li:first-child a {
+    padding-top: 0;
+}
+
+.my-stories ul li a:hover {
+    padding-right: 70px;
+    color: #000000;
+}
+
+/* .big-wrectangle {
+    width: auto;
     text-align: left;
     min-height: inherit;
     margin: 30px auto 60px auto;
-}
+} */
 
 .article-footer {
     min-height: 20px;

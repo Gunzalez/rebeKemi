@@ -21,4 +21,10 @@ jQuery(document).ready(function ($) {
         single_column_breakpoint: 920
     });
 
+    $links = $('.my-stories a');
+    $links.each(function(index, link){
+        var text = (index+1) + '. ' + $(link).text();
+        $(link).text(text);
+    });
+
 });

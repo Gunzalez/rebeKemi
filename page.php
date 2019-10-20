@@ -29,14 +29,16 @@ get_header(); ?>
 	<div class="masonryinside no-margin">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-10 offset-md-1">
-
-					<div class="wrectangle big-wrectangle">						
+				<div class="col-sm-9">
+					<div class="wrectangle big-wrectangle">	
+						<h3 class="title"><?php the_title(); ?></h3>					
 						<?php the_content(); ?>
-						<?php custom_page_nav(); ?>
 					</div>
-
-
+				</div>
+				<div class="col-sm-3">
+					<div class="my-stories">						
+						<?php echo wpb_list_child_pages(); ?>
+					</div>
 				</div>
 			</div>
 		</div>
