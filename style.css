@@ -123,15 +123,19 @@ p {
 
 .page-header.naked {
     border-top: 1px solid #cccccc;
+    border-bottom: 1px solid whitesmoke;
     height: inherit !important;
 }
 
 .page-header.naked p {
     color: #000000;
+    padding: 20px;
+    border-bottom: 2px solid pink;
 }
 
 .page-header.naked .wrectangle {
     background: transparent;
+    margin-bottom: 30px;
 }
 
 .archive-header {
@@ -354,20 +358,12 @@ p {
 
 .masonryinside.no-margin {
     margin: 0;
-}
-
-.big-wrectangle {
-    width: auto;
-    max-width: 100%;
-    text-align: left;
-    min-height: inherit;
-    margin: 30px 0;
-    font-size: 1.2em;
-    color: #444444;
+    padding: 45px 0;
+    background: #ffffff;
 }
 
 .my-stories {
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .my-stories ul {
@@ -403,16 +399,9 @@ p {
 }
 
 .my-stories ul li a:hover {
-    padding-right: 70px;
+    padding-right: 45px;
     color: #000000;
 }
-
-/* .big-wrectangle {
-    width: auto;
-    text-align: left;
-    min-height: inherit;
-    margin: 30px auto 60px auto;
-} */
 
 .article-footer {
     min-height: 20px;
@@ -447,4 +436,22 @@ p {
 .custom-page-links a:hover {
     color: #ffffff;
     background: #000000;
+}
+
+.the_content {
+    color: #000000;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.the_content .title {
+    padding-bottom: 15px;
+    font-size: 1.8em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.the_content p {
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
 }

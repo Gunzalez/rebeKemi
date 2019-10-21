@@ -9,33 +9,22 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<?php $backgroundImageField = get_post_meta($post->ID, 'background_image', true); ?>
-	<?php if (!empty($backgroundImageField)){ ?>		
-		<div class="page-header" style="background-image: url('<?php the_field('background_image'); ?>')">              
-			<div class="wrectangle box-shadow">
-				<h3 class="title"><?php the_title(); ?></h3>
-				<p><?php the_field('introduction'); ?></p>
-			</div>
+	<div class="page-header naked">              
+		<div class="wrectangle">
+			<p><?php the_field('introduction'); ?></p>
 		</div>
-	<?php } else { ?>
-		<div class="page-header naked">              
-			<div class="wrectangle">
-				<h3 class="title"><?php the_title(); ?></h3>
-				<p><?php the_field('introduction'); ?></p>
-			</div>
-		</div>
-	<?php } ?>
+	</div>
 
 	<div class="masonryinside no-margin">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9">
-					<div class="wrectangle big-wrectangle">	
+				<div class="col-sm-9 col-md-6 offset-md-2">
+					<div class="the_content">						
 						<h3 class="title"><?php the_title(); ?></h3>					
 						<?php the_content(); ?>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-md-2">
 					<div class="my-stories">						
 						<?php echo wpb_list_child_pages(); ?>
 					</div>
