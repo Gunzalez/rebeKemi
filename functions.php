@@ -109,6 +109,8 @@ function wpb_list_child_pages() {
         $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
     else
         $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+
+    $string = '';
      
     if ( $childpages ) {
      
