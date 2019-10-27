@@ -366,8 +366,12 @@ p {
     background: #ffffff;
 }
 
-.my-stories {
-    /* margin: 30px 0; */
+
+.my-stories .title {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;    
 }
 
 .my-stories ul {
@@ -383,7 +387,7 @@ p {
 
 .my-stories ul li a {
     display: inline-block;
-    padding: 15px 25px 7px 0;
+    padding: 15px 15px 7px 0;
     border-bottom: 2px solid pink;
     color: #444444;
     transition: all 250ms;
@@ -396,6 +400,7 @@ p {
     border-color: #000000;
     display: block;
     cursor: default;
+    font-weight: bold;
 }
 
 .my-stories ul li:first-child a {
@@ -410,6 +415,11 @@ p {
 .article-footer {
     min-height: 20px;
     position: relative;
+}
+
+#my-sidebar.scrolled {
+    position: fixed;
+    top: 57px;
 }
 
 .custom-page-links {
@@ -458,4 +468,8 @@ p {
 .the_content p {
     padding-bottom: 15px;
     font-family: 'Raleway', sans-serif;
+}
+
+.the_content .wp-block-cover {
+    margin-bottom: 30px;
 }
