@@ -49,12 +49,18 @@ h2, h3, h4 {
     padding: 1.8em;
     text-align: center;
     margin: auto;
-    width: 70%;
+    width: 100%;
     max-width: 340px;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     min-height: 260px;
     border-radius: 2px;
+
+    
+    @media screen and (min-width: 768px){
+        width: 70%;
+        
+    }
 }
 
 .wrectangle:hover {
@@ -81,7 +87,7 @@ h2, h3, h4 {
 }
 
 .wrectangle .title {
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
     font-size: 0.9em;
     text-transform: uppercase;
     color: #000000;
@@ -126,9 +132,9 @@ h2, h3, h4 {
 
 .page-header .title {
     display: inline-block;
-    padding: 0px 20px 10px;
+    padding: 0px 20px 10px !important;
     border-bottom: 2px solid pink;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 
 .page-header.naked {
@@ -203,7 +209,7 @@ h2, h3, h4 {
 
 .pod .title {
     position: absolute;
-    bottom: -15px;
+    bottom: -30px;
     left: 0;
     right: 0;
     text-align: center;    
@@ -271,7 +277,9 @@ h2, h3, h4 {
     bottom: -15px;
     left: 0;
     right: 0;
-    text-align: center;    
+    text-align: center;
+    margin: 0 !important;    
+    padding: 0 !important;
 }
 
 .mini-pod .stage {
@@ -375,9 +383,9 @@ h2, h3, h4 {
 
 .my-stories .title {
     text-transform: uppercase;
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
     border-bottom: 1px solid #cccccc;
-    margin-bottom: 30px;    
+    margin-bottom: 30px !important;    
 }
 
 .my-stories ul {
@@ -423,10 +431,15 @@ h2, h3, h4 {
     position: relative;
 }
 
-#my-sidebar.scrolled {
-    position: fixed;
-    top: 57px;
+
+@media screen and (min-width: 768px){
+    #my-sidebar.scrolled {
+        position: fixed;
+        top: 57px;
+    }
 }
+
+
 
 .custom-page-links {
     position: absolute;
@@ -466,7 +479,7 @@ h2, h3, h4 {
 }
 
 .the_content .title {
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
     font-size: 1.8em;
     font-family: 'Raleway', sans-serif;
 }
@@ -509,6 +522,11 @@ figure {
 
 .custom-item .itemtitle {
     padding-bottom: 10px !important;
+}
+
+.custom-item .itemtitle a:hover {
+    text-decoration: none;
+    color: #000000;
 }
 
 .custom-item img {

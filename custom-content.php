@@ -7,7 +7,7 @@
 		<?php } ?>
 	</a>
 	<div class="copy">
-		<h2 class="itemtitle"><?php the_title(); ?></h2>
+		<h2 class="itemtitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<div class="itemdate"><?php stacker_posted_on() ?></div>
 		<div class="itemcat"><?php the_category( ' ' ); ?></div>
 		<div class="comments"><span><?php comments_number( '0', '1', '%' ); ?></span></div>

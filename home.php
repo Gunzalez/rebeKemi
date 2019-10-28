@@ -19,8 +19,6 @@ get_header(); ?>
 		<div class="wrapper">
 			
 			<div class="masonry" id="scroll-wrapper">
-
-			LANDING
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
