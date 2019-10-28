@@ -27,6 +27,12 @@ p {
     margin: 0 0 15px 0;
 }
 
+h2, h3, h4 {
+    padding: 0 0 15px 0 !important;
+    margin: 0 !important;
+
+}
+
 .page-header,
 .carousel-cell {
     width: 100%; /* full width */
@@ -470,6 +476,59 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-.the_content .wp-block-cover {
+.the_content .wp-block-cover,
+.the_content .wp-block-image,
+figure {
     margin-bottom: 30px;
+}
+
+.the_content ul,
+.the_content ol {
+    margin-bottom: 30px;
+    list-style: inherit;
+    margin-left: 15px;
+    padding-left: 14px;
+}
+
+.custom-item {
+    position: relative;
+    padding: 10px 10px 20px 10px;
+}
+
+.custom-item > a {
+    display: block;
+}
+
+.custom-item > a {
+    text-decoration: none;
+}
+
+.custom-item .copy {
+    padding: 10px;
+}
+
+.custom-item .itemtitle {
+    padding-bottom: 10px !important;
+}
+
+.custom-item img {
+    border: 0;
+    border-radius: 2px;
+}
+
+.custom-item .comments {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.comments span {
+    display: inline-block;
+    padding: 8px 14px 6px 14px;
+    line-height: 100%;
+    border-radius: 2px;
+    background: pink;
+    color: #000000;
 }
