@@ -11,21 +11,8 @@
 	<div class="wrapper">
 		<div id="footerwidgets">
 			<?php /* Widgetised Area */
-			if (!function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Footer' )) ?>
-
-		</div>
-		<!-- End Footer Widgets-->
-		<?php do_action( 'stacker_credits' ); ?>
-		<div id="footercredits">
-			<h3 class="footer-title"><a href="#">Stacker</a></h3>
-
-			<div class="footertext">
-
-
-				<p><a href="http://wordpress.org/" rel="generator">Proudly powered by
-						WordPress</a> <?php printf( __( 'Theme: %1$s by %2$s.', 'stacker-lite' ), 'Stacker', '<a href="http://themefurnace.com" rel="designer">ThemeFurnace</a>' ); ?>
-				</p>
-			</div>
+			if (!function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar( 'Footer' ))
+			?>
 		</div>
 		<?php wp_footer(); ?>
 	</div>
