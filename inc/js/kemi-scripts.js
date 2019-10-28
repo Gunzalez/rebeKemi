@@ -28,25 +28,25 @@ jQuery(document).ready(function ($) {
     });
 
     stickyNavInit = function(){
-        var scrollPosY = window.pageYOffset | document.body.scrollTop;            
-        var $stickySideBar = document.querySelector('#my-sidebar');
-        var pageHeaderHeight = $('.page-header').height();
-        console.log(pageHeaderHeight);
-
-        var triggerHeight = pageHeaderHeight + 257;
-        var checkForSticky = function(){
-            if(scrollPosY > triggerHeight){
-                $stickySideBar.classList.add('scrolled');
-            } else if( scrollPosY <= triggerHeight ) {
-                $stickySideBar.classList.remove('scrolled');
-            }
-        };
-        
-        window.onscroll = function(){
-            scrollPosY = window.pageYOffset | document.body.scrollTop;
+        if($('#my-sidebar').length > 0){
+            var scrollPosY = window.pageYOffset | document.body.scrollTop;            
+            var $stickySideBar = document.querySelector('#my-sidebar');
+            var pageHeaderHeight = $('.page-header').height();
+            var triggerHeight = pageHeaderHeight + 257;
+            var checkForSticky = function(){
+                if(scrollPosY > triggerHeight){
+                    $stickySideBar.classList.add('scrolled');
+                } else if( scrollPosY <= triggerHeight ) {
+                    $stickySideBar.classList.remove('scrolled');
+                }
+            };
+            
+            window.onscroll = function(){
+                scrollPosY = window.pageYOffset | document.body.scrollTop;
+                checkForSticky();
+            };
             checkForSticky();
-        };
-        checkForSticky();
+        }
     }
     stickyNavInit();
 
