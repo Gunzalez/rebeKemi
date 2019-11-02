@@ -17,6 +17,11 @@ Version: 0.1.0
 /* brand fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 /* usage: font-family: 'Raleway', sans-serif; */
+
+/* yellow: #d4af02; */
+/* blue: -#1916a2; */
+/* blue: -#0000b2; */
+
 body {
     /* background: #e8e8e8; */
     font-family: 'Raleway', sans-serif;
@@ -68,8 +73,8 @@ h2, h3, h4 {
 }
 
 .wrectangle:hover > span {
-    background: #000000;
-    color: #ffffff;
+    background: #1916a2;
+    color: #d4af02;
 }
 
 .box-shadow {
@@ -90,7 +95,7 @@ h2, h3, h4 {
     padding-bottom: 15px !important;
     font-size: 0.9em;
     text-transform: uppercase;
-    color: #000000;
+    color: #1916a2;
 }
 
 .page-header .wrectangle p {
@@ -109,12 +114,13 @@ h2, h3, h4 {
 .wrectangle > span {
     border-radius: 2px;
     padding: 6px 12px;
-    background: pink;
+    background: #d4af02;
     display: inline-block;
     font-size: 0.8em;
-    color: #000000;
+    color: #1916a2;
     margin-top: 20px;
     text-transform: uppercase;
+    font-weight: bold;
     transition: background 500ms;
 }
 
@@ -133,12 +139,15 @@ h2, h3, h4 {
 .page-header .title {
     display: inline-block;
     padding: 0px 20px 10px !important;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid #d4af02;
     margin-bottom: 15px !important;
+    color: #1916a2;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .page-header.naked {
-    border-top: 1px solid #cccccc;
+    /* border-top: 1px solid #cccccc; */
     border-bottom: 1px solid whitesmoke;
     height: inherit !important;
 }
@@ -146,12 +155,12 @@ h2, h3, h4 {
 .page-header.naked p {
     color: #000000;
     padding: 20px;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid #d4af02;
 }
 
 .page-header.naked .wrectangle {
     background: transparent;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .archive-header {
@@ -163,7 +172,7 @@ h2, h3, h4 {
     font-size: 1.3em;
     display: inline-block;
     padding: 0 10px 10px 15px;
-    border-bottom: 1px solid pink;    
+    border-bottom: 1px solid #d4af02;    
 }
 
 .main-carousel {
@@ -195,6 +204,7 @@ h2, h3, h4 {
     padding-bottom: 20px;
     font-size: 2.0em;
     text-align: center;
+    color: #1916a2;
 }
 
 .pod {
@@ -224,18 +234,19 @@ h2, h3, h4 {
 
 .pod .title span {
     display: inline-block;
-    background: pink;
-    color: #000000;
+    background: #d4af02;
+    color: #1916a2;
     padding: 8px 12px;
     font-size: 1.0em;
     text-transform: uppercase;
+    font-weight: bold;
     transition: all 500ms;
     border-radius: 2px;
 }
 
 .pod:hover .title span {
-    background: #000000;
-    color: #ffffff;
+    background: #1916a2;
+    color: #d4af02;
 }
 
 .grid {
@@ -293,7 +304,7 @@ h2, h3, h4 {
     display: inline-block;
     padding: 0 0 5px 0;
     margin-bottom: 15px;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid #d4af02;
     text-transform: uppercase;
     font-size: 0.9em;
     transition: all 250ms;
@@ -301,18 +312,19 @@ h2, h3, h4 {
 
 .mini-pod .title span {
     display: inline-block;
-    background: pink;
-    color: #000000;
+    background: #d4af02;
+    color: #1916a2;
     border-radius: 2px;
     padding: 9px 12px;
     font-size: 0.9em;
     text-transform: uppercase;
+    font-weight: bold;
     transition: all 500ms;
 }
 
 .mini-pod:hover .title span {
-    background: #000000;
-    color: #ffffff;
+    background: #1916a2;
+    color: #d4af02;
 }
 
 .mini-pod:hover .stage {
@@ -322,7 +334,7 @@ h2, h3, h4 {
 /* theme overrides */
 
 #cssmenu {
-    background: pink;
+    background: #d4af02;
 }
 
 #cssmenu > ul > li.current_page_item {
@@ -330,17 +342,24 @@ h2, h3, h4 {
     color: #000000;
 }
 
-#cssmenu ul a {
-    color: #000000 !important;
+#cssmenu > ul > li > a {
+    /* font-size: 18px; */
+    padding: 17px 25px;
+    color: #1916a2 !important;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-#cssmenu ul ul a {
+/* #cssmenu ul a {
+} */
+
+/* #cssmenu ul ul a {
     color: #a2a2a2 !important;
 }
 
 #cssmenu ul ul a:hover {
-    color: #ffffff !important;
-}
+    color: yellow !important;
+} */
 
 #cssmenu > ul > li.menu-item-has-children > a:after, 
 #cssmenu .menu > ul > li.page_item_has_children > a:after {
@@ -350,7 +369,7 @@ h2, h3, h4 {
     width: 8px;
     height: 2px;
     display: block; */
-    background: #000000;
+    background: #1916a2;
     /* content: ''; */
 }
 
@@ -362,7 +381,7 @@ h2, h3, h4 {
     display: block;
     width: 2px;
     height: 8px; */
-    background: #000000;
+    background: #1916a2;
     /* content: '';
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
@@ -409,7 +428,7 @@ h2, h3, h4 {
 .my-stories ul li a {
     display: inline-block;
     padding: 15px 15px 7px 0;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid #d4af02;
     color: #444444;
     transition: all 250ms;
     text-decoration: none;
@@ -418,7 +437,7 @@ h2, h3, h4 {
 }
 
 .my-stories ul li.current_page_item a {
-    border-color: #000000;
+    border-color: #1916a2;
     display: block;
     cursor: default;
     font-weight: bold;
@@ -430,7 +449,7 @@ h2, h3, h4 {
 
 .my-stories ul li a:hover {
     padding-right: 45px;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .article-footer {
@@ -475,7 +494,7 @@ h2, h3, h4 {
 
 .custom-page-links a:hover {
     color: #ffffff;
-    background: #000000;
+    /* background: #000000; */
 }
 
 .the_content {
@@ -489,6 +508,7 @@ h2, h3, h4 {
     padding-bottom: 15px !important;
     font-size: 1.8em;
     font-family: 'Raleway', sans-serif;
+    color: #1916a2;
 }
 
 .the_content p {
@@ -533,7 +553,7 @@ figure {
 
 .custom-item .itemtitle a:hover {
     text-decoration: none;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .custom-item img {
@@ -554,6 +574,24 @@ figure {
     padding: 8px 14px 6px 14px;
     line-height: 100%;
     border-radius: 2px;
-    background: pink;
+    background: #d4af02;
     color: #000000;
+}
+
+#sitebranding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.logo-link img {
+    width: 360px;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.flickity-page-dots .dot {
+    background: #1916a2;
 }

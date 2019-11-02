@@ -20,6 +20,29 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div id="header">
+
+	<div id="sitebranding">
+
+		<div class="site-branding">
+			<?php the_custom_logo(); ?>
+			<?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
+				<?php jetpack_the_site_logo(); ?>
+			<?php endif; ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class='logo-link'><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/rebekemi-logo.png" title="RebeKemi"/>
+			</a>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+		</div>
+			
+		<div id="menu-social" class="menu">
+			<?php get_template_part( 'menu', 'social' ); ?>
+		</div>
+
+	</div><!--End Site Branding -->
+	
+</div>
+
 <div id="cssmenu" class="align-center">
 	<?php
 	wp_nav_menu( array(
@@ -30,26 +53,5 @@
 		)
 	);
 	?>
-</div>
-<div id="header">
-<div id="sitebranding">
-
-<div class="site-branding">
-		<?php the_custom_logo(); ?>
-			<?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
-				<?php jetpack_the_site_logo(); ?>
-			<?php endif; ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
-	
-	
-	
-	
-	
-	<div id="menu-social" class="menu">
-		<?php get_template_part( 'menu', 'social' ); ?>
-	</div>
-    </div><!--End Site Branding -->
 </div>
 <!--End Header -->

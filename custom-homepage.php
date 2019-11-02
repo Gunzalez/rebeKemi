@@ -57,21 +57,21 @@ get_header(); ?>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="/my-story/" class="pod">
+                        <a href="my-story/" class="pod">
                         <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/type-writter.jpg" title="My Story"/>
                             <h3 class="title">
                                 <span>My Story</span></h3>
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="/the-blog/" class="pod">
+                        <a href="the-blog/" class="pod">
                         <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/the-blog.jpg" title="The blog"/>
                             <h3 class="title">
                                 <span>The Blog</span></h3>
                         </a>                       
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="/donations/" class="pod">         
+                        <a href="donations/" class="pod">         
                         <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/donations.jpg" title="Donations"/>                   
                             <h3 class="title">
                                 <span>Donations</span></h3>
