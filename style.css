@@ -18,9 +18,9 @@ Version: 0.1.0
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 /* usage: font-family: 'Raleway', sans-serif; */
 
-/* yellow: #d4af02; */
-/* blue: -#1916a2; */
-/* blue: -#0000b2; */
+
+/* dusty: -#d9b310; */
+/* lavender: -#0b3c5d ; */
 
 body {
     /* background: #e8e8e8; */
@@ -73,8 +73,8 @@ h2, h3, h4 {
 }
 
 .wrectangle:hover > span {
-    background: #1916a2;
-    color: #d4af02;
+    background: #0b3c5d ;
+    color: #d9b310;
 }
 
 .box-shadow {
@@ -95,7 +95,7 @@ h2, h3, h4 {
     padding-bottom: 15px !important;
     font-size: 0.9em;
     text-transform: uppercase;
-    color: #1916a2;
+    color: #0b3c5d ;
 }
 
 .page-header .wrectangle p {
@@ -114,10 +114,10 @@ h2, h3, h4 {
 .wrectangle > span {
     border-radius: 2px;
     padding: 6px 12px;
-    background: #d4af02;
+    background: #d9b310;
     display: inline-block;
     font-size: 0.8em;
-    color: #1916a2;
+    color: #0b3c5d ;
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -139,9 +139,9 @@ h2, h3, h4 {
 .page-header .title {
     display: inline-block;
     padding: 0px 20px 10px !important;
-    border-bottom: 2px solid #d4af02;
+    border-bottom: 2px solid #d9b310;
     margin-bottom: 15px !important;
-    color: #1916a2;
+    color: #0b3c5d ;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -155,12 +155,16 @@ h2, h3, h4 {
 .page-header.naked p {
     color: #000000;
     padding: 20px;
-    border-bottom: 2px solid #d4af02;
+    border-bottom: 2px solid #d9b310;
 }
 
 .page-header.naked .wrectangle {
     background: transparent;
     margin: 30px;
+}
+
+.page-header.naked .wrectangle .title {
+    font-size: 1.2em;
 }
 
 .archive-header {
@@ -172,7 +176,7 @@ h2, h3, h4 {
     font-size: 1.3em;
     display: inline-block;
     padding: 0 10px 10px 15px;
-    border-bottom: 1px solid #d4af02;    
+    border-bottom: 1px solid #d9b310;    
 }
 
 .main-carousel {
@@ -204,7 +208,7 @@ h2, h3, h4 {
     padding-bottom: 20px;
     font-size: 2.0em;
     text-align: center;
-    color: #1916a2;
+    color: #0b3c5d ;
 }
 
 .pod {
@@ -234,8 +238,8 @@ h2, h3, h4 {
 
 .pod .title span {
     display: inline-block;
-    background: #d4af02;
-    color: #1916a2;
+    background: #d9b310;
+    color: #0b3c5d ;
     padding: 8px 12px;
     font-size: 1.0em;
     text-transform: uppercase;
@@ -245,8 +249,8 @@ h2, h3, h4 {
 }
 
 .pod:hover .title span {
-    background: #1916a2;
-    color: #d4af02;
+    background: #0b3c5d ;
+    color: #d9b310;
 }
 
 .grid {
@@ -304,7 +308,7 @@ h2, h3, h4 {
     display: inline-block;
     padding: 0 0 5px 0;
     margin-bottom: 15px;
-    border-bottom: 2px solid #d4af02;
+    border-bottom: 2px solid #d9b310;
     text-transform: uppercase;
     font-size: 0.9em;
     transition: all 250ms;
@@ -312,8 +316,8 @@ h2, h3, h4 {
 
 .mini-pod .title span {
     display: inline-block;
-    background: #d4af02;
-    color: #1916a2;
+    background: #d9b310;
+    color: #0b3c5d ;
     border-radius: 2px;
     padding: 9px 12px;
     font-size: 0.9em;
@@ -323,8 +327,8 @@ h2, h3, h4 {
 }
 
 .mini-pod:hover .title span {
-    background: #1916a2;
-    color: #d4af02;
+    background: #0b3c5d ;
+    color: #d9b310;
 }
 
 .mini-pod:hover .stage {
@@ -334,7 +338,7 @@ h2, h3, h4 {
 /* theme overrides */
 
 #cssmenu {
-    background: #d4af02;
+    background: #d9b310;
 }
 
 #cssmenu > ul > li.current_page_item {
@@ -345,7 +349,7 @@ h2, h3, h4 {
 #cssmenu > ul > li > a {
     /* font-size: 18px; */
     padding: 17px 25px;
-    color: #1916a2 !important;
+    color: #0b3c5d  !important;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -369,7 +373,7 @@ h2, h3, h4 {
     width: 8px;
     height: 2px;
     display: block; */
-    background: #1916a2;
+    background: #0b3c5d ;
     /* content: ''; */
 }
 
@@ -381,7 +385,7 @@ h2, h3, h4 {
     display: block;
     width: 2px;
     height: 8px; */
-    background: #1916a2;
+    background: #0b3c5d ;
     /* content: '';
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
@@ -428,7 +432,7 @@ h2, h3, h4 {
 .my-stories ul li a {
     display: inline-block;
     padding: 15px 15px 7px 0;
-    border-bottom: 2px solid #d4af02;
+    border-bottom: 2px solid #d9b310;
     color: #444444;
     transition: all 250ms;
     text-decoration: none;
@@ -437,7 +441,7 @@ h2, h3, h4 {
 }
 
 .my-stories ul li.current_page_item a {
-    border-color: #1916a2;
+    border-color: #0b3c5d ;
     display: block;
     cursor: default;
     font-weight: bold;
@@ -481,7 +485,7 @@ h2, h3, h4 {
 .custom-page-links a {
     border-radius: 2px;
     padding: 6px 12px;
-    background: pink;
+    background: #d9b310;
     display: inline-block;
     font-size: 0.8em;
     color: #000000;
@@ -508,7 +512,7 @@ h2, h3, h4 {
     padding-bottom: 15px !important;
     font-size: 1.8em;
     font-family: 'Raleway', sans-serif;
-    color: #1916a2;
+    color: #0b3c5d ;
 }
 
 .the_content p {
@@ -535,8 +539,20 @@ figure {
     padding: 10px 10px 20px 10px;
 }
 
+.title {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: bold;
+}
+
 .custom-item > a {
     display: block;
+}
+
+.custom-item .itemtitle a {
+    color: #0b3c5d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 .custom-item > a {
@@ -574,11 +590,12 @@ figure {
     padding: 8px 14px 6px 14px;
     line-height: 100%;
     border-radius: 2px;
-    background: #d4af02;
+    background: #d9b310;
     color: #000000;
 }
 
 #sitebranding {
+    border-top: 8px solid #d9b310 ;
     padding-top: 80px;
     padding-bottom: 80px;
 
@@ -593,5 +610,8 @@ figure {
 }
 
 .flickity-page-dots .dot {
-    background: #1916a2;
+    background: #0b3c5d ;
 }
+
+/* yellow: #d9b310; */
+/* blue: -#0b3c5d ; */
