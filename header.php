@@ -37,6 +37,9 @@
 			
 		<div id="menu-social" class="menu">
 			<?php get_template_part( 'menu', 'social' ); ?>
+			<div id="coloured-social-media">
+				
+			</div>
 		</div>
 
 	</div><!--End Site Branding -->

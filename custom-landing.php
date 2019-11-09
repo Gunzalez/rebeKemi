@@ -46,9 +46,9 @@ get_header(); ?>
 
 									<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="mini-pod"> 
 										<div class="intro">
-											<span class="stage">Stage <?php echo $count; ?></span>
+											<span class="stage"><?php the_title(); ?></span>
 											<p><?php the_field('introduction'); ?></p>
-											<h3 class="title"><span><?php the_title(); ?></span></h3>
+											<h3 class="title"><span>Stage <?php echo $count; ?></span></h3>
 										</div>
 									</a>
 									
