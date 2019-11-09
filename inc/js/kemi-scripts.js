@@ -50,4 +50,12 @@ jQuery(document).ready(function ($) {
     }
     stickyNavInit();
 
+    prettifySocialMediaLinks = function(){
+        $links = $('#menu-social-items a');
+        $links.each(function(index, link){
+           $(link).addClass('link-'+ index);
+        })
+    }
+    prettifySocialMediaLinks();
+
 });

@@ -338,7 +338,8 @@ h2, h3, h4 {
 /* theme overrides */
 
 #cssmenu {
-    background: #d9b310;
+    background: #ffffff;
+    border-top: 1px solid #e6e6e6;
 }
 
 #cssmenu > ul > li.current_page_item {
@@ -348,11 +349,44 @@ h2, h3, h4 {
 
 #cssmenu > ul > li > a {
     /* font-size: 18px; */
-    padding: 17px 25px;
+    padding: 17px 30px 14px 30px;
     color: #0b3c5d  !important;
     text-transform: uppercase;
-    font-weight: bold;
+    border-bottom: 3px solid #ffffff;
 }
+
+#cssmenu > ul > li > a:hover {
+    /* font-size: 18px; */
+    border-color: #d9b310;
+}
+
+
+#menu-social-items a:before {
+    content: none !important;
+}
+
+#menu-social-items a.link-0 {
+    background-image: url('../../themes/stacker-lite-child/img/square-facebook.png');
+}
+
+#menu-social-items a.link-1 {
+    background-image: url('../../themes/stacker-lite-child/img/square-twitter.png');
+    border-radius: 4px;
+}
+
+#menu-social-items a.link-2 {
+    background-image: url('../../themes/stacker-lite-child/img/square-instagram.png');
+}
+
+#menu-social-items a {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+}
+
 
 /* #cssmenu ul a {
 } */
