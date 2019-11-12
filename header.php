@@ -30,9 +30,9 @@
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
 				<?php jetpack_the_site_logo(); ?>
 			<?php endif; ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class='logo-link'><img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/rebekemi-logo.png" title="RebeKemi"/>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class='logo-link'><span class='rebe'>rebe</span><span class='kemi'>Kemi</span>
 			</a>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 		</div>
 			
 		<div id="menu-social" class="menu">

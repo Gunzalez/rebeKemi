@@ -312,6 +312,7 @@ h2, h3, h4 {
     text-transform: uppercase;
     font-size: 0.9em;
     transition: all 250ms;
+    font-weight: bold;
 }
 
 .mini-pod .title span {
@@ -322,7 +323,6 @@ h2, h3, h4 {
     padding: 9px 12px;
     font-size: 0.9em;
     text-transform: uppercase;
-    font-weight: bold;
     transition: all 500ms;
 }
 
@@ -342,20 +342,18 @@ h2, h3, h4 {
     border-top: 1px solid #e6e6e6;
 }
 
-#cssmenu > ul > li.current_page_item {
-    background: #ffffff;
-    color: #000000;
-}
 
 #cssmenu > ul > li > a {
     /* font-size: 18px; */
+    font-weight: bold;
     padding: 17px 30px 14px 30px;
     color: #0b3c5d  !important;
     text-transform: uppercase;
     border-bottom: 3px solid #ffffff;
 }
 
-#cssmenu > ul > li > a:hover {
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.current_page_item a {
     /* font-size: 18px; */
     border-color: #d9b310;
 }
@@ -632,15 +630,37 @@ figure {
     border-top: 8px solid #d9b310 ;
     padding-top: 80px;
     padding-bottom: 80px;
-
 }
 
-.logo-link img {
-    width: 360px;
+.no-image {
+    padding: 15px 0;
+}
+
+.no-image .logo-link {
+    font-size: 1.8em;    
+}
+
+#sitebranding .logo-link {
+    text-transform: uppercase;
 }
 
 .logo-link {
-    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.0em;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.logo-link:hover  {
+    text-decoration: none;
+}
+
+.logo-link .rebe {
+    color: #d9b310;
+}
+    
+.logo-link .kemi {
+    color: #0b3c5d;
 }
 
 .flickity-page-dots .dot {
@@ -649,3 +669,4 @@ figure {
 
 /* yellow: #d9b310; */
 /* blue: -#0b3c5d ; */
+/* usage: font-family: 'Raleway', sans-serif; */
