@@ -642,14 +642,21 @@ figure {
 
 #sitebranding .logo-link {
     text-transform: uppercase;
-}
+}   
 
 .logo-link {
     font-family: 'Raleway', sans-serif;
-    font-size: 4.0em;
+    font-size: 3.0em;
     font-weight: 400;
     line-height: 1;
 }
+
+@media (min-width: 768px){
+    .logo-link {
+        font-size: 5.0em;
+    }
+}
+ 
 
 .logo-link:hover  {
     text-decoration: none;
