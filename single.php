@@ -16,17 +16,31 @@ get_header(); ?>
 		<?php } else { ?>
 				<div class="page-header naked">              
 					<div class="wrectangle">
+
+					<?php $emoji = get_post_meta($post->ID, 'emoji', true); ?>
+					<?php if($emoji && $emoji != 'none') { ?>
+					
 						<h2 class="title"><?php the_title(); ?></h2>
-						
-						<?php $emoji = get_post_meta($post->ID, 'emoji', true); ?>
-						<?php if($emoji && $emoji != 'none') { ?>
+						<div class="emojis-and-date">
 							<div class="emoji emoji-<?php echo $emoji ?>"></div>
-						<?php } ?>
-						
+							<div class=""><?php stacker_posted_on(); ?></div>
+							<div class="emoji emoji-<?php echo $emoji ?>"></div>						
+						</div>
+						<div class="itemcat">
+							<?php the_category( ' ' ); ?>
+						</div>
+
+					<?php } else { ?>
+
+						<h2 class="title"><?php the_title(); ?></h2>
 						<h3 class="date-posted"><?php stacker_posted_on(); ?></h3>
 						<div class="itemcat">
 							<?php the_category( ' ' ); ?>
 						</div>
+
+					<?php } ?>
+
+						
 					</div>
 				</div>
 		<?php } ?>

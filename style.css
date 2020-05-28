@@ -137,7 +137,7 @@ h2, h3, h4 {
 }
 
 .page-header .title {
-    display: inline-block;
+    display: block;
     padding: 0px 20px 10px !important;
     border-bottom: 2px solid #d9b310;
     margin-bottom: 15px !important;
@@ -674,16 +674,32 @@ figure {
     background: #0b3c5d ;
 }
 
-.emoji {
-    display: inline-block;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
+.emojis-and-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.emoji-baby {
-    background-image: url('../../themes/stacker-lite-child/img/emoji-baby.png');
+.emojis-and-date .emoji:last-child {
+    transform:scaleX(-1);
 }
+
+.emoji {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.emoji-baby { background-image: url('../../themes/stacker-lite-child/img/emoji-baby.png'); }
+.emoji-arm { background-image: url('../../themes/stacker-lite-child/img/emoji-arm.png'); }
+.emoji-fencing { background-image: url('../../themes/stacker-lite-child/img/emoji-fencing.png'); }
+.emoji-group { background-image: url('../../themes/stacker-lite-child/img/emoji-group.png'); }
+.emoji-worry { background-image: url('../../themes/stacker-lite-child/img/emoji-worry.png'); }
 
 /* yellow: #d9b310; */
 /* blue: -#0b3c5d ; */
