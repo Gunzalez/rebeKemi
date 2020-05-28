@@ -17,6 +17,12 @@ get_header(); ?>
 				<div class="page-header naked">              
 					<div class="wrectangle">
 						<h2 class="title"><?php the_title(); ?></h2>
+						
+						<?php $emoji = get_post_meta($post->ID, 'emoji', true); ?>
+						<?php if($emoji && $emoji != 'none') { ?>
+							<div class="emoji emoji-<?php echo $emoji ?>"></div>
+						<?php } ?>
+						
 						<h3 class="date-posted"><?php stacker_posted_on(); ?></h3>
 						<div class="itemcat">
 							<?php the_category( ' ' ); ?>
