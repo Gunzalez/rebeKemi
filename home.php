@@ -13,6 +13,9 @@
 
 get_header(); ?>
 
+<!-- This remove 'meet to share' category from the list: SK-->
+<?php query_posts('cat=-15'); ?>
+
 <?php if ( have_posts() ) : ?>
 
 	<div class="demo-wrap">

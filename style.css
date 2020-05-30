@@ -385,6 +385,17 @@ h2, h3, h4 {
     background-size: cover;
 }
 
+#menu-social {
+    text-align: left;
+    margin: 0 0 30px 0;
+}
+
+#menu-social ul {
+    list-style: none;
+    margin: 0 15px;
+    text-align: left;
+}
+
 
 /* #cssmenu ul a {
 } */
@@ -628,13 +639,13 @@ figure {
 
 #sitebranding {
     border-top: 8px solid #d9b310 ;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 80px;
 }
 
 .no-image {
     padding: 15px 0 0 0;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 }
 
 .no-image .logo-link {
@@ -642,12 +653,9 @@ figure {
 }
 
 .larger-title {
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
-#sitebranding .logo-link {
-    /* text-transform: uppercase; */
-}   
 
 .logo-link {
     font-family: 'Raleway', sans-serif;

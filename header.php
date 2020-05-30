@@ -24,6 +24,13 @@
 <div id="header">
 
 	<div id="sitebranding">
+			
+		<div id="menu-social" class="menu">
+			<?php get_template_part( 'menu', 'social' ); ?>
+			<div id="coloured-social-media">
+				
+			</div>
+		</div>
 
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>
@@ -33,13 +40,6 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class='logo-link'><span class='rebe'>rebe</span><span class='kemi'>Kemi</span>
 			</a>
 			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
-		</div>
-			
-		<div id="menu-social" class="menu">
-			<?php get_template_part( 'menu', 'social' ); ?>
-			<div id="coloured-social-media">
-				
-			</div>
 		</div>
 
 	</div><!--End Site Branding -->

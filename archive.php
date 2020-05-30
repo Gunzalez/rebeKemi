@@ -5,11 +5,22 @@
  */
 
 get_header(); ?>
+
 <?php if ( have_posts() ) : ?>
 
-	<div class="archive-header">
-		<h3 class="title"><?php echo get_the_archive_title() ?></h3>
-	</div>
+	<?php
+		// Display headers only if not 'Meet To Share' category, id is 15
+		$category = get_the_category(); 
+		$CatId = $category[0]->cat_ID;
+		if($CatId !== 15){
+	?>		
+		<div class="archive-header">
+			<h3 class="title"><?php echo get_the_archive_title() ?></h3>
+		</div>
+	<?php
+		}
+	?>
+
 
 	<div class="demo-wrap">
 		<div class="wrapper">		
