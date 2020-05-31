@@ -353,7 +353,7 @@ h2, h3, h4 {
 }
 
 #cssmenu > ul > li > a:hover,
-#cssmenu > ul > li.current_page_item a {
+#cssmenu > ul > li.current-menu-item a {
     /* font-size: 18px; */
     border-color: #d9b310;
 }
