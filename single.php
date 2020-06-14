@@ -66,16 +66,20 @@ get_header(); ?>
 							<?php echo wpb_list_child_pages(); ?>
 						</div>
 					</div> -->
-				</div>
-				<div class="row">
-					<div class="col-sm-12">
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-					</div>
+				</div>				
+			</div>
+			<div class="lined shaded">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9 col-md-8 offset-md-2">
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template
+						if ( comments_open() || '0' != get_comments_number() ) :
+							comments_template();
+						endif;
+						?>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>

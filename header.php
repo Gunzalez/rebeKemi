@@ -24,13 +24,21 @@
 <div id="header">
 
 	<div id="sitebranding">
-			
-		<div id="menu-social" class="menu">
-			<?php get_template_part( 'menu', 'social' ); ?>
-			<div id="coloured-social-media">
+
+		<div class="container">
+			<div class="row">
+
+			<div id="menu-social" class="menu">
+				<?php get_template_part( 'menu', 'social' ); ?>
+				<div id="coloured-social-media">
+					
+				</div>
+			</div>
 				
 			</div>
 		</div>
+			
+		
 
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>

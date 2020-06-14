@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="page-header" style="background-image: url('<?php the_field('background_image'); ?>')">            
 		
 		<div class="wrectangle box-shadow">
-			<h3 class="title"><?php the_title(); ?></h3>
+			<h3 class="title"><?php the_field('page_sub_title'); ?></h3>
 			<div class="call-out"><?php the_field('page_introduction_text'); ?></div>
 		</div>
 
