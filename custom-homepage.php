@@ -71,10 +71,10 @@ get_header(); ?>
                         </a>                       
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a href="donations/" class="pod">         
-                        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/donations.jpg" title="Donations"/>                   
+                        <a href="benefaction/" class="pod">         
+                        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/donations.jpg" title="Benefaction"/>                   
                             <h3 class="title">
-                                <span>Donations</span></h3>
+                                <span>Benefaction</span></h3>
                         </a>
                     </div>
                 </div>
