@@ -18,8 +18,45 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<div class="intro-1">
-							<img src=''
+						<div class="the_content">
+							<?php the_content(); ?>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<div class="intro intro-1">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-1.jpg" title="Effortless Pleasures" />
+							<div class="content">
+								<h3>Effortless Pleasures</h3>
+								<p>Bring home Fou Fou & Minou! Keep your feet warm and your ovaries mellow.</p>
+							</div>
+						</div>
+						<div class="intro intro-2">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-2.png" title="Bring Them Home" />
+							<div class="content">
+								<h3>Bring Them Home</h3>
+								<p>100% cotton panties and white cotton socks, with hand embroidered Fou Fou and Minou.</p>
+								<p>The two proud girls, relaxing and taking care of themselves during their period.</p>
+							</div>
+						</div>
+						<div class="shop">
+							<div class="boutique-item">
+								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/comforted-feet-ovaries" target="_blank">
+									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-pants.jpg" title="Underwear & Socks" />
+									<h4>Underwear & Socks</h4>
+									<!-- <p>100% cotton pants (S/M/L) and white cotton socks (one size), with hand embroidered Fou Fou and Minou, the two proud girls, relaxing and taking care of themselves during their period. Illustration and embroidery by embroidery_lab</p> -->
+									<p>Handmade embroidery made in London.</p>
+								</a>
+							</div>
+							<div class="boutique-item">
+								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/rive-gauche-t-shirt" target="_blank">
+									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-shirt.jpg" title="Rive Gauche T-shirt" />
+									<h4>Rive Gauche T-shirt</h4>
+									<p>100% cotton and screen printed in London.</p>
+								</a>
+							</div>
+
 						</div>
 					</div>
 				</div>				
