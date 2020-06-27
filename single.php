@@ -23,7 +23,7 @@ get_header(); ?>
 						<h2 class="title"><?php the_title(); ?></h2>
 						<div class="emojis-and-date">
 							<div class="emoji emoji-<?php echo $emoji ?>"></div>
-							<div class=""><?php stacker_posted_on(); ?></div>
+							<div><?php stacker_posted_on(); ?></div>
 							<div class="emoji emoji-<?php echo $emoji ?>"></div>						
 						</div>
 						<div class="itemcat">
