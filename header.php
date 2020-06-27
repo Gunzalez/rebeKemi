@@ -38,8 +38,7 @@
 			</div>
 		</div>
 			
-		
-
+	
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>
 			<?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
