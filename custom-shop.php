@@ -15,12 +15,10 @@ get_header(); ?>
 	</div>
 
 	<div class="masonryinside no-margin">
-			<div class="container">
+			<div class="container the-shop">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<div class="the_content">
-							<?php the_content(); ?>
-						</div>
+						<?php the_content(); ?>
 					</div>
 				</div>
 				<div class="row">
@@ -28,14 +26,14 @@ get_header(); ?>
 						<div class="intro intro-1">
 							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-1.jpg" title="Effortless Pleasures" />
 							<div class="content">
-								<h3>Effortless Pleasures</h3>
+								<h4>Effortless Pleasures</h4>
 								<p>Bring home Fou Fou & Minou! Keep your feet warm and your ovaries mellow.</p>
 							</div>
 						</div>
 						<div class="intro intro-2">
 							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-2.png" title="Bring Them Home" />
 							<div class="content">
-								<h3>Bring Them Home</h3>
+								<h4>Bring Them Home</h4>
 								<p>100% cotton panties and white cotton socks, with hand embroidered Fou Fou and Minou.</p>
 								<p>The two proud girls, relaxing and taking care of themselves during their period.</p>
 							</div>
@@ -56,7 +54,6 @@ get_header(); ?>
 									<p>100% cotton and screen printed in London.</p>
 								</a>
 							</div>
-
 						</div>
 					</div>
 				</div>				
