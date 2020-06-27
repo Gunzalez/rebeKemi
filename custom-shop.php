@@ -41,18 +41,18 @@ get_header(); ?>
 						<div class="shop">
 							<div class="boutique-item">
 								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/comforted-feet-ovaries" target="_blank">
-									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-pants.jpg" title="Underwear & Socks" />
-									<h4>Underwear & Socks</h4>
-									<!-- <p>100% cotton pants (S/M/L) and white cotton socks (one size), with hand embroidered Fou Fou and Minou, the two proud girls, relaxing and taking care of themselves during their period. Illustration and embroidery by embroidery_lab</p> -->
-									<p>Handmade embroidery made in London.</p>
-								</a>
+									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-pants.jpg" title="Underwear & Socks" /></a>
+								<h4>Underwear & Socks</h4>
+								<p>Handmade embroidery made in London.</p>
+								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/comforted-feet-ovaries" target="_blank" class="buy-now">Buy now</a>
 							</div>
 							<div class="boutique-item">
 								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/rive-gauche-t-shirt" target="_blank">
 									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-shirt.jpg" title="Rive Gauche T-shirt" />
-									<h4>Rive Gauche T-shirt</h4>
-									<p>100% cotton and screen printed in London.</p>
 								</a>
+								<h4>Rive Gauche T-shirt</h4>
+								<p>100% cotton and screen printed in London.</p>
+								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/rive-gauche-t-shirt" target="_blank" class="buy-now">Buy now</a>
 							</div>
 						</div>
 					</div>

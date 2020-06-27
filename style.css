@@ -719,7 +719,6 @@ figure {
 /* blue: -#0b3c5d ; */
 /* usage: font-family: 'Raleway', sans-serif; */
 
-
 #comments {
     /* border-top: 4px solid #f5f5f5; */
     border-top: none;
@@ -835,4 +834,26 @@ figure {
 .the-shop .boutique-item img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+/* yellow: #d9b310; */
+/* blue: -#0b3c5d ; */
+/* usage: font-family: 'Raleway', sans-serif; */
+
+.the-shop .buy-now {
+    display: inline-block;
+    background: #d9b310;
+    color: #0b3c5d;
+    padding: 8px 12px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 500ms;
+    border-radius: 2px;
+}
+
+.the-shop .buy-now:hover  {
+    background: #0b3c5d;
+    color: #d9b310;
+    text-decoration: none;
 }
