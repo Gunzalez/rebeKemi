@@ -17,19 +17,20 @@ get_header(); ?>
 	<div class="masonryinside no-margin">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-8 col-md-6 offset-md-1">
+					<div class="col-md-10 offset-md-1">
 						<div class="the_content">
 							<?php the_content(); ?>
 						</div>
 					</div>
-					<div class="col-sm-4 col-md-4">
+				</div>				
+				<!-- <div class="row">
+					<div class="col-md-6 offset-md-6">
 						<div class='rbk-form'>
-							<?php wpforms_display( 375, '', '' ); ?> <!-- local form -->
-							<?php wpforms_display( 322, '', '' ); ?> <!-- live form -->
+							<?php /* wpforms_display( 375, '', '' ); local form */ ?>
+							<?php /* wpforms_display( 322, '', '' ); live form  */ ?>
 						</div>
 					</div>
-				</div>
-				
+				</div> -->
 			</div>
 		</div>
 

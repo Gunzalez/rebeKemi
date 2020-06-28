@@ -17,12 +17,12 @@ get_header(); ?>
 	<div class="masonryinside no-margin">
 			<div class="container the-shop">
 				<div class="row">
-					<div class="col-md-10 offset-md-1">
+					<div class="col-sm-12 col-md-8 offset-md-2">
 						<?php the_content(); ?>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-10 offset-md-1">
+					<div class="col-sm-12 col-md-8 offset-md-2">
 						<div class="intro intro-1">
 							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-1.jpg" title="Effortless Pleasures" />
 							<div class="content">
