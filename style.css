@@ -825,7 +825,7 @@ figure {
 }
 
 .the-shop .boutique-item {
-    max-width: 300px;
+    max-width: 260px;
     margin: 0 30px;
     text-align: center;
     padding-bottom: 10px;
@@ -844,7 +844,7 @@ figure {
     display: inline-block;
     background: #d9b310;
     color: #0b3c5d;
-    padding: 8px 12px;
+    padding: 8px 12px 6px 12px;
     font-size: 1.0em;
     text-transform: uppercase;
     font-weight: 600;
@@ -860,4 +860,8 @@ figure {
 
 .masonryinside {
     font-size: 16px !important;
+}
+
+.nf-form-cont {
+    clear: both;
 }
