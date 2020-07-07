@@ -189,9 +189,10 @@ h2, h3, h4 {
     background: transparent !important;
 }
 
-.flickity-page-dots {
-    /* bottom: 25px !important; */
+/* .flickity-page-dots {
+    bottom: 25px !important;
 }
+*/
 
 .inside-masonryinside {
     padding: 30px 0;
@@ -241,7 +242,7 @@ h2, h3, h4 {
     background: #d9b310;
     color: #0b3c5d ;
     padding: 8px 12px;
-    font-size: 1.0em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 500ms;
@@ -290,7 +291,7 @@ h2, h3, h4 {
 .mini-pod .intro p {
     padding: 0 0 15px 0;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 16px;
     line-height: 130%;
 }
 
@@ -321,7 +322,7 @@ h2, h3, h4 {
     color: #0b3c5d ;
     border-radius: 2px;
     padding: 9px 12px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-transform: uppercase;
     transition: all 500ms;
 }
@@ -480,7 +481,7 @@ h2, h3, h4 {
     transition: all 250ms;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .my-stories ul li.current_page_item a {
@@ -595,7 +596,7 @@ figure {
     color: #0b3c5d;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .custom-item > a {
@@ -845,7 +846,7 @@ figure {
     background: #d9b310;
     color: #0b3c5d;
     padding: 8px 12px 6px 12px;
-    font-size: 1.0em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 500ms;
