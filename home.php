@@ -13,9 +13,6 @@
 
 get_header(); ?>
 
-<!-- This remove 'meet to share' category from the list: SK-->
-<?php query_posts('cat=-15'); ?>
-
 <?php if ( have_posts() ) : ?>
 
 	<div class="demo-wrap">
@@ -36,6 +33,7 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 			</div>
+			
 			<div class="pagination"><?php
 				// use Jetpack infinite scroll, fallback to default navigation
 				if ( !class_exists( 'The_Neverending_Home_Page' ) ) {

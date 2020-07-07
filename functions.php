@@ -122,3 +122,12 @@ function wpb_list_child_pages() {
 }
 
  add_shortcode('wpb_childpages', 'wpb_list_child_pages');
+
+
+/* Removes `Meet To Share` category from main blog */ 
+function exclude_category( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'cat', '-15' );
+    }
+}
+add_action( 'pre_get_posts', 'exclude_category' );
