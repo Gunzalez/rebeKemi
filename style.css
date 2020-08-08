@@ -43,7 +43,7 @@ h2, h3, h4 {
     width: 100%; /* full width */
     height: 530px; /* height of carousel */
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -716,6 +716,7 @@ figure {
 .emoji-worry { background-image: url('../../themes/stacker-lite-child/img/emoji-worry.png'); }
 .emoji-poop { background-image: url('../../themes/stacker-lite-child/img/emoji-poop.png'); }
 .emoji-question { background-image: url('../../themes/stacker-lite-child/img/emoji-question.png'); }
+.emoji-scared { background-image: url('../../themes/stacker-lite-child/img/emoji-scared.png'); }
 
 /* yellow: #d9b310; */
 /* blue: -#0b3c5d ; */
