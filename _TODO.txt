@@ -8,4 +8,8 @@ Date:           Hours:  Detail:
 
 
 2nd August      1       Question mark emoji, Maintenance Mode
-4th August      1       Edit question, Adds lots of images to many blog pages
+4th August      1       Edit Question Mark emoji, 
+                        Searches and adds Feature images to posts
+                        Add Scared emoji and new carousel image
+17th August     1       Site maintenance - backup and updates of site and plugins
+                        Tweaking Maintenance Mode image and copy
