@@ -13,3 +13,6 @@ Date:           Hours:  Detail:
                         Add Scared emoji and new carousel image
 17th August     1       Site maintenance - backup and updates of site and plugins
                         Tweaking Maintenance Mode image and copy
+25th August             Changes instagram url
+03rd October    1       Site maintenance, back ups of Wordpress and Plugins
+                        YouTube video work, account and embed in website
