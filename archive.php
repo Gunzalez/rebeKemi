@@ -6,20 +6,38 @@
 
 get_header(); ?>
 
+<?php
+// get the current taxonomy term
+$term = get_queried_object();
+$banner = get_field('category_banner', $term);
+?>
+
 <?php if ( have_posts() ) : ?>
 
 	<?php
 		// Display headers only if not 'Meet To Share' category, id is 15
+		// or 'Cancer A Second Time, id 17
 		$category = get_the_category(); 
 		$CatId = $category[0]->cat_ID;
-		if($CatId !== 15){
+		if($CatId !== 15 && $CatId !== 17){
 	?>		
+
 		<div class="archive-header">
 			<h3 class="title"><?php echo get_the_archive_title() ?></h3>
 		</div>
-	<?php
-		}
-	?>
+
+	<?php } else { ?>
+
+		<?php if($banner) { ?>
+			<div class="page-header" style="background-image: url('<?php echo $banner; ?>')">
+				<div class="wrectangle box-shadow">
+					<h3 class="title"><?php echo get_the_archive_title() ?></h3>
+					<div class="call-out">Category description</div>
+				</div>
+			</div>
+		<?php } ?>
+
+	<?php }	?>
 
 
 	<div class="demo-wrap">
