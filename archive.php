@@ -32,7 +32,7 @@ $banner = get_field('category_banner', $term);
 			<div class="page-header" style="background-image: url('<?php echo $banner; ?>')">
 				<div class="wrectangle box-shadow">
 					<h3 class="title"><?php echo get_the_archive_title() ?></h3>
-					<div class="call-out">Category description</div>
+					<?php the_archive_description( '<div class="call-out">', '</div>' ); ?>
 				</div>
 			</div>
 		<?php } ?>
@@ -51,7 +51,11 @@ $banner = get_field('category_banner', $term);
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'custom-content', get_post_format() );
+					if($CatId !== 15 && $CatId !== 17){
+						get_template_part( 'custom-content', get_post_format() );
+					} else {
+						get_template_part( 'custom-content-archive', get_post_format() );
+					}
 					?>
 				<?php endwhile; ?>
 			</div>
