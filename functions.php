@@ -128,7 +128,7 @@ function wpb_list_child_pages() {
 /* Removes `Cancer a Second Time`, id 17 on prod */ 
 function exclude_category( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'cat', '-15,-17' );
+        $query->set( 'cat', '-15,-17,-18' );
     }
 }
 add_action( 'pre_get_posts', 'exclude_category' );

@@ -19,7 +19,7 @@ $banner = get_field('category_banner', $term);
 		// or 'Cancer A Second Time, id 17
 		$category = get_the_category(); 
 		$CatId = $category[0]->cat_ID;
-		if($CatId !== 15 && $CatId !== 17){
+		if($CatId !== 15 && $CatId !== 17 && $CatId !== 18){
 	?>		
 
 		<div class="archive-header">
@@ -51,7 +51,7 @@ $banner = get_field('category_banner', $term);
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					if($CatId !== 15 && $CatId !== 17){
+					if($CatId !== 15 && $CatId !== 17 && $CatId !== 18){
 						get_template_part( 'custom-content', get_post_format() );
 					} else {
 						get_template_part( 'custom-content-archive', get_post_format() );
