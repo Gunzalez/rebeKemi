@@ -1,18 +1,4 @@
-4 hours since last invoice
-
-
-
-Date:           Hours:  Detail:
-14th June       4       Meet To Share, Emojis
-28th June       7       Boutique     
-
-All paid in full, since 22nd December 2020
-------------------------
-
-
-
-
-
+All previous hours paid. New time spent belofe
 
 New Invoice for work started in August
 ------------------
@@ -28,3 +14,10 @@ New Invoice for work started in August
                         YouTube video work, account and embed in website
 January 10th    2       Cancer A Second Time, category work                        
 January 21th    4       Cancer A Second Time, category work continues
+
+
+
+TODO
+---------------------------------------
+Order Articles on Mor Storys / Second Time Round
+Build out dropdown navigation
