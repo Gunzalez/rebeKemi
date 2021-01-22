@@ -10,10 +10,33 @@ get_header(); ?>
 	
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php if (has_post_thumbnail() ) { ?>				
+	<?php 
+	/* @live */ 
+	$excludeCategoryIds = array(17,18);
+	// $excludeCategoryIds = array(3,4); 
+	$categories = get_the_category();
+	$category_id = $categories[0]->cat_ID;
+	?>
+	<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
+
+		<div class="page-header naked">              
+			<div class="wrectangle">
+				<div class="itemcat"><?php the_category( ' ' ); ?></div>
+				<p class="introduction"><?php the_field('introduction'); ?></p>
+				<h2 class="title"><?php the_title(); ?></h2>
+			</div>
+		</div>
+
+
+	<?php } else {?>
+
+		<?php if (has_post_thumbnail() ) { ?>
+
 				<div class="page-header hero" 
 				style="background-image: url('<?php echo get_the_post_thumbnail_url() ?>')">&nbsp;</div>
+
 		<?php } else { ?>
+
 				<div class="page-header naked">              
 					<div class="wrectangle">
 
@@ -43,13 +66,18 @@ get_header(); ?>
 						
 					</div>
 				</div>
+
 		<?php } ?>
+
+	<?php } ?>
+
 
 		<div class="masonryinside no-margin">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-9 col-md-8 offset-md-2">
-						<div class="the_content">						
+						<div class="the_content">
+											
 							<?php if (has_post_thumbnail() ) { ?>
 								<h3 class="title"><?php the_title(); ?></h3>
 								<h3 class="date-posted"><?php stacker_posted_on(); ?></h3>

@@ -105,6 +105,7 @@ h4 {
   font-size: 1em;
   color: #000000;
   margin: 0;
+  padding: 0 20px;
 }
 
 .brand-link,
@@ -149,7 +150,7 @@ h4 {
   height: inherit !important;
 }
 
-.page-header.naked p {
+.page-header.naked p.bordered {
   color: #000000;
   padding: 20px;
   border-bottom: 2px solid #d9b310;
@@ -353,6 +354,15 @@ h4 {
 #cssmenu > ul > li.current-menu-item a {
   /* font-size: 18px; */
   border-color: #d9b310;
+}
+
+#cssmenu ul ul li a {
+  font-weight: 600;
+  background-color: white;
+  color: #0b3c5d !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 #menu-social-items a:before {
@@ -873,4 +883,29 @@ figure {
 
 .nf-form-cont {
   clear: both;
+}
+
+.intro-link,
+.intro-link:hover {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.the_content .wp-block-gallery > ul {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.the_content h2 {
+  font-size: 1.8em !important;
+}
+
+.the_content .blocks-gallery-grid .blocks-gallery-item figcaption {
+  padding: 3em 1.77em 0.7em !important;
+  text-align: left !important;
+}
+
+.wrectangle .introduction {
+  padding: 20px !important;
+  color: black;
 }
