@@ -243,7 +243,6 @@ h4 {
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 600;
-  transition: all 500ms;
   border-radius: 2px;
 }
 
@@ -322,7 +321,6 @@ h4 {
   padding: 9px 12px;
   font-size: 0.8em;
   text-transform: uppercase;
-  transition: all 500ms;
 }
 
 .mini-pod:hover .title span {
@@ -535,7 +533,6 @@ h4 {
   color: #000000;
   margin-top: 20px;
   text-transform: uppercase;
-  transition: background 500ms;
   text-decoration: none;
   margin: 0 15px;
 }
@@ -599,6 +596,15 @@ figure {
   font-size: 0.8em;
 }
 
+.category-list a {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.category-list a:hover {
+  text-decoration: none;
+}
+
 .custom-item > a {
   text-decoration: none;
 }
@@ -609,6 +615,15 @@ figure {
 
 .custom-item .itemtitle {
   padding-bottom: 10px !important;
+}
+
+.custom-item .itemtitle.item-link {
+  padding-bottom: 0 !important;
+}
+
+.custom-item .itemtitle.item-link a {
+  padding-bottom: 10px !important;
+  display: block;
 }
 
 .custom-item .itemtitle a:hover {
@@ -762,7 +777,6 @@ figure {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 600;
-  transition: all 500ms;
   border-radius: 2px;
   font-family: "Raleway", sans-serif !important;
 }
@@ -867,7 +881,6 @@ figure {
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 600;
-  transition: all 500ms;
   border-radius: 2px;
 }
 
@@ -889,6 +902,8 @@ figure {
 .intro-link:hover {
   color: #000000 !important;
   text-decoration: none !important;
+  text-decoration: none;
+  display: block;
 }
 
 .the_content .wp-block-gallery > ul {
@@ -915,6 +930,68 @@ figure {
   font-weight: bold !important;
 }
 
-.clickable {
-  cursor: pointer;
+.hidden-items {
+  display: none;
+}
+
+.sub-navigation {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.sub-navigation li {
+  display: inline-block;
+  padding: 3px;
+}
+
+.sub-navigation li a {
+  display: block;
+  width: 38px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: #0b3c5d;
+}
+
+.sub-navigation li.active {
+  padding: 4px 0;
+}
+
+.sub-navigation li.active a {
+  background-color: transparent;
+  color: #d9b310;
+  cursor: default;
+  font-weight: bold;
+}
+
+.sub-navigation li a:hover {
+  text-decoration: none;
+}
+
+.after-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.after-content .sub-navigation li a {
+  background-color: #d9b310;
+  color: #0b3c5d;
+  font-weight: bold;
+}
+
+.after-content .sub-navigation li a:hover {
+  color: #d9b310;
+  background-color: #0b3c5d;
+}
+
+.after-content .sub-navigation li.active a {
+  background: transparent;
+}
+
+.after-content .sub-navigation li.active a:hover {
+  background: transparent;
+  color: #0b3c5d;
 }
