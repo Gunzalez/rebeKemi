@@ -27,17 +27,12 @@
 
 		<div class="container">
 			<div class="row">
-
-			<div id="menu-social" class="menu">
-				<?php get_template_part( 'menu', 'social' ); ?>
-				<div id="coloured-social-media">
-					
-				</div>
+				<div id="menu-social" class="menu">
+					<?php get_template_part( 'menu', 'social' ); ?>
+					<div id="coloured-social-media"></div>
+				</div>				
 			</div>
-				
-			</div>
-		</div>
-			
+		</div>			
 	
 		<div class="site-branding">
 			<?php the_custom_logo(); ?>
@@ -55,13 +50,14 @@
 
 <div id="cssmenu" class="align-center">
 	<?php
-	wp_nav_menu( array(
-			'theme_location' => 'primary',
-			'container'      => false,
-			'items_wrap'     => '<ul>%3$s</ul>',
-			'depth'          => 0,
-		)
-	);
+		wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'menu_id' => 'main-menu', 
+				'container'      => false,
+				'items_wrap'     => '<ul>%3$s</ul>',
+				'depth'          => 0,
+			)
+		);
 	?>
 </div>
 <!--End Header -->

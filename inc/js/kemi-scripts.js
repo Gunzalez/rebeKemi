@@ -81,6 +81,25 @@ jQuery(document).ready(function ($) {
             .text(index + 1);
         });
     });
+
+    if ($subnavs) {
+      var subnav = $subnavs[0];
+      if ($(subnav).hasClass("menu-my-story")) {
+        var $mainNavLinks = $("#cssmenu > ul li");
+        $mainNavLinks.each(function (_, link) {
+          if ($(link).find("a").text() === "My Story") {
+            $(link).addClass("current-menu-item");
+          }
+        });
+      } else if ($(subnav).hasClass("menu-second-time")) {
+        var $mainNavLinks = $("#cssmenu ul li");
+        $mainNavLinks.each(function (_, link) {
+          if ($(link).find("a").text() === "A Second Time") {
+            $(link).addClass("current-menu-item");
+          }
+        });
+      }
+    }
     $subnavs.removeClass("display-none");
   };
   AdjustSubnavigationMenu();

@@ -14,15 +14,15 @@ New Invoice for work started in August
                         YouTube video work, account and embed in website
 January 10th    2       Cancer A Second Time, category work                        
 January 21th    4       Cancer A Second Time, category work continues
+January 22nd    1       Order Articles on Mor Storys / Second Time Round
+January 23rd    4       Build out My Story / Second Time sub menus, 
+                        Style banner area for My Story / Second Time details pages
 
 
 
 TODO
 ---------------------------------------
-Order Articles on Mor Storys / Second Time Round
 Build out dropdown navigation
-Build out My Story / Second Time sub menus
-Style banner area for My Story / Second Time details pages
 
 
 DONE

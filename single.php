@@ -19,6 +19,7 @@ get_header(); ?>
 	$categories = get_the_category();
 	$category_id = $categories[0]->cat_ID;
 	$menuToUse = $category_id === 18 ? 'menu-my-story' : 'menu-second-time';
+	$menuClassToUse = $category_id === 18 ? 'sub-navigation display-none menu-my-story' : 'sub-navigation display-none menu-second-time';
 	?>
 
 	<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
@@ -29,15 +30,15 @@ get_header(); ?>
 				<h2 class="title"><?php the_title(); ?></h2>
 				<div class="itemcat category-list"><?php the_category( ' ' ); ?></div>
 				<?php 
-					wp_nav_menu( array( 
-						'theme_location' => $menuToUse, 
-						'menu_class' => 'sub-navigation display-none', 
-						'menu_id' => 'stories-submenu', 
-						'container_id' => 'stories-submenu-container', 
-						'container_class' => 'stories-submenu-container',
-						'depth' => 1,
-						'wp_page_menu' => false
-					)); 
+				wp_nav_menu( array( 
+					'theme_location' => $menuToUse, 
+					'menu_class' => $menuClassToUse , 
+					'menu_id' => 'stories-submenu', 
+					'container_id' => 'stories-submenu-container', 
+					'container_class' => 'stories-submenu-container',
+					'depth' => 1,
+					'wp_page_menu' => false
+				)); 
 				?>
 			</div>
 		</div>
@@ -112,15 +113,15 @@ get_header(); ?>
 
 							<div class="after-content">
 							<?php 
-								wp_nav_menu( array( 
-									'theme_location' => $menuToUse, 
-									'menu_class' => 'sub-navigation display-none', 
-									'menu_id' => 'stories-submenu', 
-									'container_id' => 'stories-submenu-container', 
-									'container_class' => 'stories-submenu-container',
-									'depth' => 1,
-									'wp_page_menu' => false
-								)); 
+							wp_nav_menu( array( 
+								'theme_location' => $menuToUse, 
+								'menu_class' => $menuClassToUse, 
+								'menu_id' => 'stories-submenu', 
+								'container_id' => 'stories-submenu-container', 
+								'container_class' => 'stories-submenu-container',
+								'depth' => 1,
+								'wp_page_menu' => false
+							)); 
 							?>
 							</div>
 
