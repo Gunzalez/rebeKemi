@@ -65,8 +65,8 @@ $excludeCategoryIds = array(15,17,18);
 					case 18:
 						get_template_part( 'custom-content-intro', get_post_format() );
 						break;
-					case 3:
-						get_template_part( 'custom-content-intro', get_post_format() );
+					// case 3:
+					// 	get_template_part( 'custom-content-intro', get_post_format() );
 					// 	break;
 					// case 4:
 					// 	get_template_part( 'custom-content-intro', get_post_format() );
