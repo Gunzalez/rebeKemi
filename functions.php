@@ -22,11 +22,19 @@ function stacker_child_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'stacker_child_scripts' );
 
-/* homepage carousel menu */
+
+
+/* My Story */
 function wpb_custom_new_menu() {
-    register_nav_menu('homepage-carousel',__( 'Homepage Carousel' ));
-}
-add_action( 'init', 'wpb_custom_new_menu' );
+    register_nav_menus(
+      array(
+        // 'homepage-carousel' => __( 'Homepage Carousel' ),
+        'menu-my-story' => __( 'My Story Menu' ),
+        'menu-second-time' => __( 'A Second Time Menu' )
+      )
+    );
+  }
+  add_action( 'init', 'wpb_custom_new_menu' );
 
 // add_post_type_support( 'page', 'excerpt' );
 
