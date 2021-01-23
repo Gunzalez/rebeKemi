@@ -909,3 +909,12 @@ figure {
   padding: 20px !important;
   color: black;
 }
+
+#reply-title {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.clickable {
+  cursor: pointer;
+}

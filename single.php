@@ -21,9 +21,9 @@ get_header(); ?>
 
 		<div class="page-header naked">              
 			<div class="wrectangle">
-				<div class="itemcat"><?php the_category( ' ' ); ?></div>
 				<p class="introduction"><?php the_field('introduction'); ?></p>
 				<h2 class="title"><?php the_title(); ?></h2>
+				<div class="itemcat"><?php the_category( ' ' ); ?></div>
 			</div>
 		</div>
 

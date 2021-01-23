@@ -21,3 +21,9 @@ TODO
 ---------------------------------------
 Order Articles on Mor Storys / Second Time Round
 Build out dropdown navigation
+Build out My Story / Second Time sub menus
+Style banner area for My Story / Second Time details pages
+
+
+DONE
+Make entire box clickable for My Story / Second Time pods
