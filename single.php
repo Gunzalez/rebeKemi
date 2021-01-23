@@ -12,21 +12,35 @@ get_header(); ?>
 
 	<?php 
 	/* @live */ 
+	// id 17 = My Story category
+	// id 18 = A second Time category
 	$excludeCategoryIds = array(17,18);
 	// $excludeCategoryIds = array(3,4); 
 	$categories = get_the_category();
 	$category_id = $categories[0]->cat_ID;
+	$menuToUse = $category_id === 18 ? 'menu-my-story' : 'menu-second-time';
 	?>
+
 	<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
 
 		<div class="page-header naked">              
-			<div class="wrectangle">
+			<div class="wrectangle before-content">
 				<p class="introduction"><?php the_field('introduction'); ?></p>
 				<h2 class="title"><?php the_title(); ?></h2>
-				<div class="itemcat"><?php the_category( ' ' ); ?></div>
+				<div class="itemcat category-list"><?php the_category( ' ' ); ?></div>
+				<?php 
+					wp_nav_menu( array( 
+						'theme_location' => $menuToUse, 
+						'menu_class' => 'sub-navigation display-none', 
+						'menu_id' => 'stories-submenu', 
+						'container_id' => 'stories-submenu-container', 
+						'container_class' => 'stories-submenu-container',
+						'depth' => 1,
+						'wp_page_menu' => false
+					)); 
+				?>
 			</div>
 		</div>
-
 
 	<?php } else {?>
 
@@ -77,15 +91,39 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-sm-9 col-md-8 offset-md-2">
 						<div class="the_content">
-											
-							<?php if (has_post_thumbnail() ) { ?>
+
+							<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
+
+								<!-- do nothing -->
+
+							<?php } else { ?>
+
+								<?php if (has_post_thumbnail() ) { ?>
 								<h3 class="title"><?php the_title(); ?></h3>
 								<h3 class="date-posted"><?php stacker_posted_on(); ?></h3>
 								<div class="itemcat">
 									<?php the_category( ' ' ); ?>
 								</div>
-							<?php } ?>					
+								<?php } ?>
+
+							<?php } ?>											
+												
 							<?php the_content(); ?>
+
+							<div class="after-content">
+							<?php 
+								wp_nav_menu( array( 
+									'theme_location' => $menuToUse, 
+									'menu_class' => 'sub-navigation display-none', 
+									'menu_id' => 'stories-submenu', 
+									'container_id' => 'stories-submenu-container', 
+									'container_class' => 'stories-submenu-container',
+									'depth' => 1,
+									'wp_page_menu' => false
+								)); 
+							?>
+							</div>
+
 
 						</div>
 					</div>

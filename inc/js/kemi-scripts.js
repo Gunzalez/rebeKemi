@@ -61,12 +61,27 @@ jQuery(document).ready(function ($) {
     var $itemLinks = $(".item-link");
     $itemLinks.each(function (_, link) {
       var url = $(link).find("a").attr("href");
-      var $item = $(link).parents(".item");
+      var $item = $(link).parents(".copy");
       $item.addClass("clickable");
       $item.on("click", function () {
         window.location.assign(url);
       });
     });
   };
-  setUpItemLinks();
+  // setUpItemLinks();
+
+  AdjustSubnavigationMenu = function () {
+    var $subnavs = $(".sub-navigation");
+    $subnavs.each(function (_, subnav) {
+      $(subnav)
+        .find("li")
+        .each(function (index, li) {
+          $(li)
+            .find("a")
+            .text(index + 1);
+        });
+    });
+    $subnavs.removeClass("display-none");
+  };
+  AdjustSubnavigationMenu();
 });

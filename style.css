@@ -930,14 +930,15 @@ figure {
   font-weight: bold !important;
 }
 
-.hidden-items {
-  display: none;
-}
-
 .sub-navigation {
   margin: 0 !important;
   padding: 0 !important;
   list-style: none;
+  min-height: 44px;
+}
+
+.sub-navigation.display-none {
+  opacity: 0;
 }
 
 .sub-navigation li {
@@ -956,11 +957,11 @@ figure {
   color: #0b3c5d;
 }
 
-.sub-navigation li.active {
+.sub-navigation li.current-menu-item {
   padding: 4px 0;
 }
 
-.sub-navigation li.active a {
+.sub-navigation li.current-menu-item a {
   background-color: transparent;
   color: #d9b310;
   cursor: default;
@@ -987,11 +988,11 @@ figure {
   background-color: #0b3c5d;
 }
 
-.after-content .sub-navigation li.active a {
+.after-content .sub-navigation li.current-menu-item a {
   background: transparent;
 }
 
-.after-content .sub-navigation li.active a:hover {
+.after-content .sub-navigation li.current-menu-item a:hover {
   background: transparent;
   color: #0b3c5d;
 }
