@@ -17,6 +17,7 @@ January 21th    4       Cancer A Second Time, category work continues
 January 22nd    1       Order Articles on Mor Storys / Second Time Round
 January 23rd    4       Build out My Story / Second Time sub menus, 
                         Style banner area for My Story / Second Time details pages
+January 30th    2       Complets menu, resoinsive behaviour and Sick Emoji
 
 
 
