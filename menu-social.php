@@ -8,9 +8,6 @@ if ( has_nav_menu( 'social' ) ) {
 	wp_nav_menu(
 		array(
 			'theme_location'  => 'social',
-			'container'       => 'div',
-			'container_id'    => 'menu-social-id',
-			'container_class' => 'menu',
 			'menu_id'         => 'menu-social-items',
 			'menu_class'      => 'menu-items',
 			'depth'           => 1,

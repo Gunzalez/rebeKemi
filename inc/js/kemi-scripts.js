@@ -123,7 +123,7 @@ jQuery(document).ready(function ($) {
       "position-right",
       "pagedim-black",
       "position-front",
-      "theme-dark",
+      // "theme-dark",
     ],
     navbar: {
       // sticky: false,
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
   setUpPageMobileNavigation = function () {
     var menu = new Mmenu("#main-navigation", mmenuOptions, mmenuConfigurations);
 
-    $(".open-menu").on("click", function (evnt) {
+    $("#menu-trigger button").on("click", function (evnt) {
       evnt.preventDefault();
       menu.API.open();
     });
@@ -150,6 +150,10 @@ jQuery(document).ready(function ($) {
       evnt.preventDefault();
       menu.API.close();
     });
+
+    // remove 'MENU 'heading from slide out panels
+    $(".mm-navbar").eq(0).remove();
   };
+
   setUpPageMobileNavigation();
 });

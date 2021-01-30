@@ -26,13 +26,21 @@
 
 	<div id="sitebranding">
 
-		<div class="container">
-			<div class="row">
-				<div id="menu-social" class="menu">
-					<?php get_template_part( 'menu', 'social' ); ?>
-					<div id="coloured-social-media"></div>
-				</div>				
+		<div class="top-row">
+		
+			<div id="menu-social">
+				<?php get_template_part( 'menu', 'social' ); ?>
+				<div id="coloured-social-media"></div>
+			</div>	
+			
+			<div id="menu-trigger">
+				<button class="mburger mburger--collapse">
+					<b></b>
+					<b></b>
+					<b></b>
+				</button>
 			</div>
+
 		</div>			
 	
 		<div class="site-branding">
@@ -44,8 +52,6 @@
 			</a>
 			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 		</div>
-
-		<a href="#" class="open-menu">Open</a>
 
 	</div><!--End Site Branding -->
 	
