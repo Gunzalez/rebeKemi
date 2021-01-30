@@ -22,7 +22,12 @@ January 23rd    4       Build out My Story / Second Time sub menus,
 
 TODO
 ---------------------------------------
-Build out dropdown navigation
+Build out dropdown navigation, or change to mmenu style for mobile
+
+Hover state on pods - stories
+Responsive behaviour of header area
+Try another Font
+
 
 
 DONE
