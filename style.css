@@ -411,7 +411,7 @@ h4 {
   text-align: left;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1192px) {
   #menu-trigger {
     display: none;
   }
@@ -420,7 +420,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1193px) {
   #menu-trigger {
     display: block;
   }
@@ -652,7 +652,6 @@ figure {
 #sitebranding {
   border-top: 8px solid #d9b310;
   padding-top: 0;
-  padding-bottom: 80px;
 }
 
 .no-image {
@@ -723,6 +722,9 @@ figure {
 }
 .emoji-arm {
   background-image: url("../../themes/stacker-lite-child/img/emoji-arm.png");
+}
+.emoji-sick {
+  background-image: url("../../themes/stacker-lite-child/img/emoji-sick.png");
 }
 .emoji-fencing {
   background-image: url("../../themes/stacker-lite-child/img/emoji-fencing.png");
@@ -1012,4 +1014,8 @@ figure {
 
 .mm-panels .current_page_item a {
   color: #d9b310 !important;
+}
+
+#header {
+  height: auto;
 }
