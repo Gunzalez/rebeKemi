@@ -90,7 +90,7 @@ get_header(); ?>
 		<div class="masonryinside no-margin">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9 col-md-8 offset-md-2">
+					<div class="col-md-8 offset-md-2">
 						<div class="the_content">
 
 							<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
@@ -142,7 +142,7 @@ get_header(); ?>
 			<div class="lined shaded">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-9 col-md-8 offset-md-2">
+						<div class="col-md-8 offset-md-2">
 						<?php
 						// If comments are open or we have at least one comment, load up the comment template
 						if ( comments_open() || '0' != get_comments_number() ) :

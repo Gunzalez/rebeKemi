@@ -54,7 +54,6 @@ h4 {
   text-align: center;
   margin: auto;
   width: 100%;
-  max-width: 340px;
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   min-height: 260px;
@@ -62,6 +61,12 @@ h4 {
 
   @media screen and (min-width: 768px) {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrectangle {
+    max-width: 340px;
   }
 }
 
