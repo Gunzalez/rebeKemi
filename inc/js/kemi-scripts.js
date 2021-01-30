@@ -26,6 +26,8 @@ jQuery(document).ready(function ($) {
     $(link).text(text);
   });
 
+  /* ------------------------------------------------------------------------------------------------- */
+
   stickyNavInit = function () {
     if ($("#my-sidebar").length > 0) {
       var scrollPosY = window.pageYOffset | document.body.scrollTop;
@@ -49,6 +51,8 @@ jQuery(document).ready(function ($) {
   };
   stickyNavInit();
 
+  /* ------------------------------------------------------------------------------------------------- */
+
   prettifySocialMediaLinks = function () {
     var $links = $("#menu-social-items a");
     $links.each(function (index, link) {
@@ -56,6 +60,8 @@ jQuery(document).ready(function ($) {
     });
   };
   prettifySocialMediaLinks();
+
+  /* ------------------------------------------------------------------------------------------------- */
 
   setUpItemLinks = function () {
     var $itemLinks = $(".item-link");
@@ -70,7 +76,11 @@ jQuery(document).ready(function ($) {
   };
   // setUpItemLinks();
 
+  /* ------------------------------------------------------------------------------------------------- */
+
+  // Replace links with numbers, ensure correct top nav option is clicked
   AdjustSubnavigationMenu = function () {
+    // replaces links masks with numbers
     var $subnavs = $(".sub-navigation");
     $subnavs.each(function (_, subnav) {
       $(subnav)
@@ -82,6 +92,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // sets focus on appropriate manin nav item, based on sub-navigation
     if ($subnavs) {
       var subnav = $subnavs[0];
       if ($(subnav).hasClass("menu-my-story")) {
@@ -103,4 +114,42 @@ jQuery(document).ready(function ($) {
     $subnavs.removeClass("display-none");
   };
   AdjustSubnavigationMenu();
+
+  /* ------------------------------------------------------------------------------------------------- */
+
+  // options
+  var mmenuOptions = {
+    extensions: [
+      "position-right",
+      "pagedim-black",
+      "position-front",
+      "theme-dark",
+    ],
+    navbar: {
+      // sticky: false,
+    },
+  };
+
+  // configuration
+  var mmenuConfigurations = {
+    offCanvas: {
+      clone: true,
+    },
+  };
+
+  // create mobile navigation
+  setUpPageMobileNavigation = function () {
+    var menu = new Mmenu("#main-navigation", mmenuOptions, mmenuConfigurations);
+
+    $(".open-menu").on("click", function (evnt) {
+      evnt.preventDefault();
+      menu.API.open();
+    });
+
+    $(".close-menu").on("click", function (evnt) {
+      evnt.preventDefault();
+      menu.API.close();
+    });
+  };
+  setUpPageMobileNavigation();
 });

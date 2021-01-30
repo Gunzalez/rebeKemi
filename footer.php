@@ -19,5 +19,6 @@
 	<!-- End Wrapper -->
 </div><!-- End Footer -->
 
+</div><!-- End Page -->
 </body>
 </html>

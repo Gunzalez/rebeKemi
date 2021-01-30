@@ -20,6 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="page"><!-- End Page -->
 
 <div id="header">
 
@@ -44,11 +45,13 @@
 			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 		</div>
 
+		<a href="#" class="open-menu">Open</a>
+
 	</div><!--End Site Branding -->
 	
 </div>
-
-<div id="cssmenu" class="align-center">
+	
+<nav id="main-navigation" class="align-center">
 	<?php
 		wp_nav_menu( array(
 				'theme_location' => 'primary',
@@ -59,5 +62,5 @@
 			)
 		);
 	?>
-</div>
+</nav>
 <!--End Header -->

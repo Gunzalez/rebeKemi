@@ -334,33 +334,37 @@ h4 {
 
 /* theme overrides */
 
-#cssmenu {
+#main-navigation {
   background: #ffffff;
   border-top: 1px solid #e6e6e6;
 }
 
-#cssmenu > ul > li > a {
-  /* font-size: 18px; */
-  font-weight: 600;
-  padding: 17px 30px 14px 30px;
-  color: #0b3c5d !important;
-  text-transform: uppercase;
-  border-bottom: 3px solid #ffffff;
+#main-navigation ul {
+  text-align: center;
 }
 
-#cssmenu > ul > li > a:hover,
-#cssmenu > ul > li.current-menu-item a {
-  /* font-size: 18px; */
-  border-color: #d9b310;
+#main-navigation ul li {
+  display: inline;
 }
 
-#cssmenu ul ul li a {
-  font-weight: 600;
-  background-color: white;
-  color: #0b3c5d !important;
-  text-transform: uppercase;
-  white-space: nowrap;
+#main-navigation ul li a {
+  display: inline-block;
   font-size: 14px;
+  font-weight: 600;
+  padding: 17px 30px 13px 30px;
+  color: #0b3c5d !important;
+  text-transform: uppercase;
+  border-bottom: 4px solid #ffffff;
+}
+
+#main-navigation ul li a:hover,
+#main-navigation ul li.current-menu-item a {
+  border-color: #d9b310;
+  text-decoration: none;
+}
+
+#main-navigation ul ul {
+  display: none;
 }
 
 #menu-social-items a:before {
@@ -400,19 +404,19 @@ h4 {
   text-align: left;
 }
 
-/* #cssmenu ul a {
+/* #main-navigation ul a {
 } */
 
-/* #cssmenu ul ul a {
+/* #main-navigation ul ul a {
     color: #a2a2a2 !important;
 }
 
-#cssmenu ul ul a:hover {
+#main-navigation ul ul a:hover {
     color: yellow !important;
 } */
 
-#cssmenu > ul > li.menu-item-has-children > a:after,
-#cssmenu .menu > ul > li.page_item_has_children > a:after {
+#main-navigation > ul > li.menu-item-has-children > a:after,
+#main-navigation .menu > ul > li.page_item_has_children > a:after {
   /* position: absolute;
     top: 22px;
     right: 11px;
@@ -423,8 +427,8 @@ h4 {
   /* content: ''; */
 }
 
-#cssmenu > ul > li.menu-item-has-children > a:before,
-#cssmenu .menu > ul > li.page_item_has_children > a:before {
+#main-navigation > ul > li.menu-item-has-children > a:before,
+#main-navigation .menu > ul > li.page_item_has_children > a:before {
   /* position: absolute;
     top: 19px;
     right: 14px;

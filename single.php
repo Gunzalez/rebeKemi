@@ -111,6 +111,8 @@ get_header(); ?>
 												
 							<?php the_content(); ?>
 
+							<?php if(in_array($category_id, $excludeCategoryIds)){ ?>
+
 							<div class="after-content">
 							<?php 
 							wp_nav_menu( array( 
@@ -124,6 +126,8 @@ get_header(); ?>
 							)); 
 							?>
 							</div>
+							
+							<?php } ?>											
 
 
 						</div>

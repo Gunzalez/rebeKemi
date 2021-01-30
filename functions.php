@@ -12,12 +12,17 @@
 function stacker_child_scripts() {
 
     wp_enqueue_style( 'flickity.min', get_stylesheet_directory_uri() . '/inc/js/flickity.min.css',false,'2.1.2','all');
+    
+    wp_enqueue_style( 'mburger.css', get_stylesheet_directory_uri() . '/inc/js/mburger.css', false, 0.1, 'all');
+    wp_enqueue_style( 'mmenu.css', get_stylesheet_directory_uri() . '/inc/js/mmenu.css', false, 0.1, 'all');
 
     wp_enqueue_script( 'flickity.pkgd.min', get_stylesheet_directory_uri() . '/inc/js/flickity.pkgd.min.js', array (), 2.1, true);
 
     wp_enqueue_script( 'pinterest_grid.js', get_stylesheet_directory_uri() . '/inc/js/pinterest_grid.js', array (), 0.1, true);
 
     wp_enqueue_script( 'kemi-scripts', get_stylesheet_directory_uri() . '/inc/js/kemi-scripts.js', array ( 'jquery' ), 0.1, true);
+
+    wp_enqueue_script( 'mmenu-js', get_stylesheet_directory_uri() . '/inc/js/mmenu.js', array ( 'jquery' ), 0.1, true);
 
 }
 add_action( 'wp_enqueue_scripts', 'stacker_child_scripts' );
@@ -134,6 +139,7 @@ function wpb_list_child_pages() {
 
 /* Removes `Meet To Share` id 15 category from main blog */ 
 /* Removes `Cancer a Second Time`, id 17 on prod */ 
+/* Removes `My Story`, id 18 on prod */ 
 function exclude_category( $query ) {
     if ( $query->is_home()  ) {
         /* @live */ 
