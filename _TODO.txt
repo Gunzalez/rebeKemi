@@ -33,14 +33,38 @@ Responsive behaviour of header area
 Try another Font
 
 
-
 DONE
 Make entire box clickable for My Story / Second Time pods
 
 
-2022
+
+
+
+
+
+
+==========================================================================================
+NEW YEAR BEGINS
+
+
+Requested updates
+Dated 08-01-2022
 -----------------------------------------------------
 Makes main wrectangle transparent - 2 hrs
 General Word Press maintenance - 1 hr
 Adding accents - 0.5hr
-- Dated 09-01-2022
+
+The above has all been done, - development time 3.5 hrs 
+--------------------------------------------------------
+
+
+Meeting and updates
+Dated 09-01-2022
+-----------------------------------------------------
+Reduce padding in transparent rectangle
+Change internal title to blue from yello, including the border 
+A second time - Make all 11 post visible, arrange from 1 - 11
+Create and send a logo
+
+The above has all been done, - development time 2 hrs 
+--------------------------------------------------------

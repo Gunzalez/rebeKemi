@@ -45,7 +45,7 @@ h4 {
 
 .wrectangle {
   background: rgba(0, 0, 0, 0.5);
-  padding: 1.8em;
+  padding: 0.6em 0.8rem 1rem 0.8rem;
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -93,14 +93,14 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .wrectangle {
-    min-height: 160px;
+    /* min-height: 160px; */
     max-width: inherit;
-    width: 440px;
+    width: 400px;
   }
 }
 
 .wrectangle .title {
-  padding-bottom: 15px !important;
+  padding-bottom: 10px !important;
   font-size: 0.9em;
   text-transform: uppercase;
   color: #0b3c5d;
@@ -136,7 +136,7 @@ h4 {
   display: inline-block;
   font-size: 0.8em;
   color: #0b3c5d;
-  margin-top: 20px;
+  margin-top: 12px;
   text-transform: uppercase;
   font-weight: 600;
   transition: background 500ms;
@@ -150,18 +150,19 @@ h4 {
   height: 530px;
 }
 
-.page-header .wrectangle {
-  min-height: 160px;
-}
-
 .page-header .title {
   display: block;
-  padding: 0px 20px 10px !important;
+  padding: 0 0 10px 0 !important;
+  margin: 0 12px 12px 12px !important;
   border-bottom: 2px solid #d9b310;
-  margin-bottom: 15px !important;
   color: #0b3c5d;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.naked .wrectangle .title {
+  color: #0b3c5d !important;
+  border-color: #0b3c5d;
 }
 
 .page-header.naked {
@@ -178,6 +179,12 @@ h4 {
 
 .page-header.naked .wrectangle {
   background: transparent;
+  margin-top: 4rem;
+  /* margin: 30px; */
+}
+
+.page-header.naked .wrectangle .introduction {
+  margin-top: -4rem;
   /* margin: 30px; */
 }
 
@@ -943,7 +950,7 @@ site-branding .logo-link {
 }
 
 .wrectangle .introduction {
-  padding: 20px !important;
+  padding: 12px !important;
   color: black;
   font-size: 0.9em;
 }
