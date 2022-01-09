@@ -1048,3 +1048,31 @@ site-branding .logo-link {
 .flickity-button {
   color: #d9b310 !important;
 }
+
+.accent-e {
+  position: relative;
+}
+
+.site-branding .accent-e::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -1px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0b3c5d;
+}
+
+.accent-e::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #0b3c5d;
+}

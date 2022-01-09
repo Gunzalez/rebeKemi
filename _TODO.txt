@@ -36,3 +36,11 @@ Try another Font
 
 DONE
 Make entire box clickable for My Story / Second Time pods
+
+
+2022
+-----------------------------------------------------
+Makes main wrectangle transparent - 2 hrs
+General Word Press maintenance - 1 hr
+Adding accents - 0.5hr
+- Dated 09-01-2022

@@ -14,7 +14,7 @@ $islarger = ''
 			<?php $islarger = 'larger-title' ?>
 			<div class='no-image'>
 				<span class='logo-link'>
-					<span class='rebe'>rebe</span><span class='kemi'>Kemi</span>
+					<span class='rebe'>rebe</span><span class='kemi'>K<span class="accent-e">&eacute;</span>m&igrave;</span>
 				</span>
 			</div>
 			
