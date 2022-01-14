@@ -139,11 +139,12 @@ function wpb_list_child_pages() {
 
 /* Removes `Meet To Share` id 15 category from main blog */ 
 /* Removes `Cancer a Second Time`, id 17 on prod */ 
+/* Removes `Podcast`, id 22 on prod */ 
 /* Removes `My Story`, id 18 on prod */ 
 function exclude_category( $query ) {
     if ( $query->is_home()  ) {
         /* @live */ 
-        $query->set( 'cat', '-15,-17,-18' );
+        $query->set( 'cat', '-15,-17,-18,-22' );
         // $query->set( 'cat', '-3,-4' );
     }
 }

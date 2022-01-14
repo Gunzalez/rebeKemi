@@ -35,10 +35,15 @@ $excludeCategoryIds = array(15,17,18);
 
 	<?php } else { ?>
 
-		<div class="archive-header">
-			<h3 class="title"><?php echo get_the_archive_title() ?></h3>
-		</div>
+		<?php
+			if ($CatId != 22){ /* Do not show if Podcast, already in main menu */
+		?>	
 
+			<div class="archive-header">
+				<h3 class="title"><?php echo get_the_archive_title() ?></h3>
+			</div>
+		
+		<?php }	?>
 
 	<?php }	?>
 

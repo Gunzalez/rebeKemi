@@ -14,6 +14,7 @@ get_header(); ?>
 	/* @live */ 
 	// id 17 = My Story category
 	// id 18 = A second Time category
+	// id 22 = Podcast
 	$excludeCategoryIds = array(17,18);
 	// $excludeCategoryIds = array(3,4); 
 	$categories = get_the_category();
