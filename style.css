@@ -854,7 +854,8 @@ site-branding .logo-link {
   margin: 20px auto;
 }
 
-.the-shop img {
+.the-shop .boutique-item img,
+.the-shop .intro img {
   max-width: 500px;
 }
 

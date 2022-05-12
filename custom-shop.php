@@ -40,19 +40,19 @@ get_header(); ?>
 						</div>
 						<div class="shop">
 							<div class="boutique-item">
-								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/comforted-feet-ovaries" target="_blank">
+								<a href="https://oohanydaynow.com/Ooh-Any-Day-Now-Creative-Practice/DesignerBoutique.html#!/products/comforted-feet-ovaries" target="_blank">
 									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-pants.jpg" title="Underwear & Socks" /></a>
 								<h4>Underwear & Socks</h4>
 								<p>Handmade embroidery made in London.</p>
-								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/comforted-feet-ovaries" target="_blank" class="buy-now">Buy now</a>
+								<a href="https://oohanydaynow.com/Ooh-Any-Day-Now-Creative-Practice/DesignerBoutique.html#!/products/comforted-feet-ovaries" target="_blank" class="buy-now">Buy now</a>
 							</div>
 							<div class="boutique-item">
-								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/rive-gauche-t-shirt" target="_blank">
+								<a href="https://oohanydaynow.com/Ooh-Any-Day-Now-Creative-Practice/DesignerBoutique.html#!/products/rive-gauche-t-shirt" target="_blank">
 									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ) ?>/img/boutique-shirt.jpg" title="Rive Gauche T-shirt" />
 								</a>
 								<h4>Rive Gauche T-shirt</h4>
 								<p>100% cotton and screen printed in London.</p>
-								<a href="https://oohanydaynow.com/OohAnyDayNow/Boutique.html#!/products/rive-gauche-t-shirt" target="_blank" class="buy-now">Buy now</a>
+								<a href="https://oohanydaynow.com/Ooh-Any-Day-Now-Creative-Practice/DesignerBoutique.html#!/products/rive-gauche-t-shirt" target="_blank" class="buy-now">Buy now</a>
 							</div>
 						</div>
 					</div>
