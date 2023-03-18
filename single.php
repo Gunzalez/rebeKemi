@@ -44,7 +44,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-	<?php } else {?>
+	<?php } else { ?>
 
 		<?php if (has_post_thumbnail() ) { ?>
 
@@ -79,15 +79,12 @@ get_header(); ?>
 
 					<?php } ?>
 
-						
 					</div>
 				</div>
 
 		<?php } ?>
 
 	<?php } ?>
-
-
 		<div class="masonryinside no-margin">
 			<div class="container">
 				<div class="row">
@@ -155,12 +152,5 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-	
-			
-			
-
-
 	<?php endwhile; // end of the loop. ?>
-
-	
 <?php get_footer(); ?>

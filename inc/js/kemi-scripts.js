@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+  "use strict";
+
   // alert('Loaded!')
   jQuery(".hidden-cell").removeClass("hidden-cell");
 
@@ -20,7 +22,7 @@ jQuery(document).ready(function ($) {
     single_column_breakpoint: 920,
   });
 
-  $links = $(".my-stories a");
+  var $links = $(".my-stories a");
   $links.each(function (index, link) {
     var text = index + 1 + ". " + $(link).text();
     $(link).text(text);
@@ -28,7 +30,7 @@ jQuery(document).ready(function ($) {
 
   /* ------------------------------------------------------------------------------------------------- */
 
-  stickyNavInit = function () {
+  var stickyNavInit = function () {
     if ($("#my-sidebar").length > 0) {
       var scrollPosY = window.pageYOffset | document.body.scrollTop;
       var $stickySideBar = document.querySelector("#my-sidebar");
@@ -53,7 +55,7 @@ jQuery(document).ready(function ($) {
 
   /* ------------------------------------------------------------------------------------------------- */
 
-  prettifySocialMediaLinks = function () {
+  var prettifySocialMediaLinks = function () {
     var $links = $("#menu-social-items a");
     $links.each(function (index, link) {
       $(link).addClass("link-" + index);
@@ -63,7 +65,7 @@ jQuery(document).ready(function ($) {
 
   /* ------------------------------------------------------------------------------------------------- */
 
-  setUpItemLinks = function () {
+  var setUpItemLinks = function () {
     var $itemLinks = $(".item-link");
     $itemLinks.each(function (_, link) {
       var url = $(link).find("a").attr("href");
@@ -76,10 +78,10 @@ jQuery(document).ready(function ($) {
   };
   // setUpItemLinks();
 
-  /* ------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------- */
 
   // Replace links with numbers, ensure correct top nav option is clicked
-  AdjustSubnavigationMenu = function () {
+  var adjustSubnavigationMenu = function () {
     // replaces links masks with numbers
     var $subnavs = $(".sub-navigation");
     $subnavs.each(function (_, subnav) {
@@ -113,9 +115,9 @@ jQuery(document).ready(function ($) {
     }
     $subnavs.removeClass("display-none");
   };
-  AdjustSubnavigationMenu();
+  adjustSubnavigationMenu();
 
-  /* ------------------------------------------------------------------------------------------------- */
+  /* ----------------------------------------------------------- */
 
   // options
   var mmenuOptions = {
@@ -138,7 +140,7 @@ jQuery(document).ready(function ($) {
   };
 
   // create mobile navigation
-  setUpPageMobileNavigation = function () {
+  var setUpPageMobileNavigation = function () {
     var menu = new Mmenu("#main-navigation", mmenuOptions, mmenuConfigurations);
 
     $("#menu-trigger button").on("click", function (evnt) {
@@ -154,6 +156,20 @@ jQuery(document).ready(function ($) {
     // remove 'MENU 'heading from slide out panels
     $(".mm-navbar").eq(0).remove();
   };
-
   setUpPageMobileNavigation();
+
+  /* ----------------------------------------------------------- */
+
+  // Changes the news ticker HTML from links to just text inside each <li></li>
+  var rearrangeNewsTickerHTML = function () {
+    if ($("#menu-news-ticker li a").length > 1) {
+      $("#menu-news-ticker li a").each(function (_, item) {
+        var text = $(item).text();
+        $(item).parent().empty().text(text);
+      });
+    } else {
+      $("#menu-news-ticker").parent().remove();
+    }
+  };
+  rearrangeNewsTickerHTML();
 });

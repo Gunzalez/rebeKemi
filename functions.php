@@ -35,7 +35,8 @@ function wpb_custom_new_menu() {
       array(
         // 'homepage-carousel' => __( 'Homepage Carousel' ),
         'menu-my-story' => __( 'My Story Menu' ),
-        'menu-second-time' => __( 'A Second Time Menu' )
+        'menu-second-time' => __( 'A Second Time Menu' ),
+        'news-ticker' => __( 'My News Ticker' )
       )
     );
   }
