@@ -35,6 +35,14 @@ get_header(); ?>
         </div>
     </div>
 
+    <div class="news-ticker">
+        <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</li>
+            <li>Xit am tetur adipisicing eli ncidunt omincron.</li>
+        </ul>
+    </div>
+
 
 <?php endwhile; // end of the loop. ?>
         
