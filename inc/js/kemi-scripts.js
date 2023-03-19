@@ -162,7 +162,7 @@ jQuery(document).ready(function ($) {
 
   // Changes the news ticker HTML from links to just text inside each <li></li>
   var rearrangeNewsTickerHTML = function () {
-    if ($("#menu-news-ticker li a").length > 1) {
+    if ($("#menu-news-ticker li a").length > 0) {
       $("#menu-news-ticker li a").each(function (_, item) {
         var text = $(item).text();
         $(item).parent().empty().text(text);
