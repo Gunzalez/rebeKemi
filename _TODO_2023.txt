@@ -4,10 +4,3 @@ New Invoice for work started in February 2023
 20 February      1       Research and site maintenance
 21 February      3       Improves security
 18 March         5       News Ticker
-
-
-
-
-TODO
----------------------------------------
-Slider/Ticker for Instagram solution
