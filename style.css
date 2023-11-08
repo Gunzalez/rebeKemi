@@ -15,10 +15,10 @@ Version: 0.1.0
 @import url("../stacker-lite/style.css");
 
 /* brand fonts */
-@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
@@ -62,7 +62,8 @@ h4 {
   box-sizing: border-box;
   /* min-height: 260px; */
   border-radius: 2px;
-  color: white !important;
+  /* color: white !important; */
+  font-weight: 700;
 }
 
 .home .page-header,
@@ -90,7 +91,7 @@ h4 {
 }
 
 .wrectangle:hover > span {
-  background: #3b6ca7;
+  background: #0b3c5d;
   color: #eae064;
 }
 
@@ -112,7 +113,7 @@ h4 {
   padding-bottom: 10px !important;
   font-size: 0.9em;
   text-transform: uppercase;
-  color: #3b6ca7;
+  color: #0b3c5d;
 }
 
 .wrectangle .title {
@@ -144,7 +145,7 @@ h4 {
   background: #eae064;
   display: inline-block;
   font-size: 0.8em;
-  color: #3b6ca7;
+  color: #0b3c5d;
   margin-top: 12px;
   text-transform: uppercase;
   font-weight: 600;
@@ -164,14 +165,14 @@ h4 {
   padding: 0 0 10px 0 !important;
   margin: 0 12px 12px 12px !important;
   border-bottom: 2px solid #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .naked .wrectangle .title {
-  color: #3b6ca7 !important;
-  border-color: #3b6ca7;
+  color: #0b3c5d !important;
+  border-color: #0b3c5d;
 }
 
 .page-header.naked {
@@ -211,8 +212,8 @@ h4 {
   max-width: 400px;
   padding: 0 0 10px 0 !important;
   margin: 0 auto 12px auto !important;
-  border-bottom: 2px solid #3b6ca7;
-  color: #3b6ca7;
+  border-bottom: 2px solid #0b3c5d;
+  color: #0b3c5d;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -249,7 +250,7 @@ h4 {
 .inside-masonryinside {
   padding: 30px 0;
   color: #000000;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .the-content {
@@ -261,7 +262,7 @@ h4 {
   padding-bottom: 20px;
   font-size: 2em;
   text-align: center;
-  color: #3b6ca7;
+  color: #0b3c5d;
 }
 
 .pod {
@@ -292,7 +293,7 @@ h4 {
 .pod .title span {
   display: inline-block;
   background: #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   padding: 8px 12px;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -301,7 +302,7 @@ h4 {
 }
 
 .pod:hover .title span {
-  background: #3b6ca7;
+  background: #0b3c5d;
   color: #eae064;
 }
 
@@ -370,7 +371,7 @@ h4 {
 .mini-pod .title span {
   display: inline-block;
   background: #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   border-radius: 2px;
   padding: 9px 12px;
   font-size: 0.8em;
@@ -378,7 +379,7 @@ h4 {
 }
 
 .mini-pod:hover .title span {
-  background: #3b6ca7;
+  background: #0b3c5d;
   color: #eae064;
 }
 
@@ -413,7 +414,7 @@ h4 {
   font-size: 15px;
   font-weight: 600;
   padding: 17px 30px 13px 30px;
-  color: #3b6ca7 !important;
+  color: #0b3c5d !important;
   text-transform: uppercase;
   border-bottom: 4px solid #ffffff;
 }
@@ -493,7 +494,7 @@ h4 {
 }
 
 #menu-trigger button b {
-  background-color: #3b6ca7;
+  background-color: #0b3c5d;
 }
 
 #menu-trigger button:hover {
@@ -536,7 +537,7 @@ h4 {
 }
 
 .my-stories ul li.current_page_item a {
-  border-color: #3b6ca7;
+  border-color: #0b3c5d;
   display: block;
   cursor: default;
   font-weight: 600;
@@ -602,14 +603,14 @@ h4 {
 .the_content .title {
   padding-bottom: 15px !important;
   font-size: 1.8em;
-  font-family: "Arimo", sans-serif;
-  color: #3b6ca7;
+  font-family: "Roboto", sans-serif;
+  color: #0b3c5d;
   font-weight: 700;
 }
 
 .the_content p {
   padding-bottom: 15px;
-  font-family: "Arimo", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .the_content .wp-block-cover,
@@ -632,7 +633,7 @@ figure {
 }
 
 .title {
-  font-family: "Arimo", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-weight: 700;
 }
 
@@ -641,8 +642,8 @@ figure {
 }
 
 .custom-item .itemtitle a {
-  color: #3b6ca7;
-  font-family: "Arimo", sans-serif;
+  color: #0b3c5d;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.8em;
 }
@@ -798,8 +799,8 @@ figure {
 }
 
 /* yellow: #eae064; */
-/* blue: -#3b6ca7 ; */
-/* usage: font-family: 'Arimo', sans-serif; */
+/* blue: -#0b3c5d ; */
+/* usage: font-family: 'Roboto', sans-serif; */
 
 #comments {
   /* border-top: 4px solid #f5f5f5; */
@@ -822,25 +823,25 @@ figure {
   margin: 0;
   display: inline-block;
   background: #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   padding: 10px 12px 8px 12px;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 2px;
-  font-family: "Arimo", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 #reply-title {
   font-size: 1.8em;
-  font-family: "Arimo", sans-serif;
-  color: #3b6ca7;
+  font-family: "Roboto", sans-serif;
+  color: #0b3c5d;
   font-weight: 700;
 }
 
 .comments-area .submit:hover {
   color: #eae064;
-  background: #3b6ca7;
+  background: #0b3c5d;
 }
 
 .lined {
@@ -887,16 +888,16 @@ figure {
 .the-shop h3 {
   padding-bottom: 15px !important;
   font-size: 1.8em;
-  font-family: "Arimo", sans-serif;
-  color: #3b6ca7;
+  font-family: "Roboto", sans-serif;
+  color: #0b3c5d;
   font-weight: 700;
 }
 
 .the-shop h4 {
   padding-bottom: 15px !important;
   font-size: 1.2em;
-  font-family: "Arimo", sans-serif;
-  color: #3b6ca7;
+  font-family: "Roboto", sans-serif;
+  color: #0b3c5d;
   font-weight: 300;
 }
 
@@ -922,13 +923,13 @@ figure {
 }
 
 /* yellow: #eae064; */
-/* blue: -#3b6ca7 ; */
-/* usage: font-family: 'Arimo', sans-serif; */
+/* blue: -#0b3c5d ; */
+/* usage: font-family: 'Roboto', sans-serif; */
 
 .the-shop .buy-now {
   display: inline-block;
   background: #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   padding: 8px 12px 6px 12px;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -937,7 +938,7 @@ figure {
 }
 
 .the-shop .buy-now:hover {
-  background: #3b6ca7;
+  background: #0b3c5d;
   color: #eae064;
   text-decoration: none;
 }
@@ -1007,7 +1008,7 @@ figure {
   text-align: center;
   background-color: #ffffff;
   border-radius: 3px;
-  color: #3b6ca7;
+  color: #0b3c5d;
 }
 
 .sub-navigation li.current-menu-item {
@@ -1032,13 +1033,13 @@ figure {
 
 .after-content .sub-navigation li a {
   background-color: #eae064;
-  color: #3b6ca7;
+  color: #0b3c5d;
   font-weight: bold;
 }
 
 .after-content .sub-navigation li a:hover {
   color: #eae064;
-  background-color: #3b6ca7;
+  background-color: #0b3c5d;
 }
 
 .after-content .sub-navigation li.current-menu-item a {
@@ -1047,7 +1048,7 @@ figure {
 
 .after-content .sub-navigation li.current-menu-item a:hover {
   background: transparent;
-  color: #3b6ca7;
+  color: #0b3c5d;
 }
 
 .mm-navbar__title {
@@ -1063,7 +1064,7 @@ figure {
 
 .mm-panels a {
   text-transform: uppercase;
-  color: #3b6ca7 !important;
+  color: #0b3c5d !important;
   font-weight: 600;
 }
 
@@ -1092,7 +1093,7 @@ figure {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #3b6ca7;
+  background-color: #0b3c5d;
 }
 
 .accent-e::after {
@@ -1104,13 +1105,13 @@ figure {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: #3b6ca7;
+  background-color: #0b3c5d;
 }
 
 /* ---------------------------------- */
 
 .menu-news-ticker-container {
-  background-color: #3b6ca7;
+  background-color: #0b3c5d;
   height: 40px;
   overflow: hidden;
   position: relative;
@@ -1138,8 +1139,8 @@ figure {
   font-size: 1.8rem;
   line-height: 40px;
   padding: 0 60px;
-  font-family: "Arimo", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
